@@ -1,0 +1,1536 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<result plugin="junit@1.19">
+  <suites>
+    <suite>
+      <file>/root/workspace/xen_pr/reports/74/test_affinity_groups.xml</file>
+      <name>nosetests</name>
+      <duration>13076.542</duration>
+      <cases>
+        <case>
+          <duration>355.338</duration>
+          <className>test_affinity_groups.TestDeployVmWithAffinityGroup</className>
+          <testName>test_DeployVmAntiAffinityGroup</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.161</duration>
+          <className>test_deploy_vgpu_enabled_vm.TestDeployvGPUenabledVM</className>
+          <testName>test_3d_gpu_support</testName>
+          <skipped>true</skipped>
+          <skippedMessage>Skipping test because suitable hypervisor/host not                        present</skippedMessage>
+          <failedSince>62</failedSince>
+        </case>
+        <case>
+          <duration>0.159</duration>
+          <className>test_deploy_vgpu_enabled_vm.TestDeployvGPUenabledVM</className>
+          <testName>test_deploy_vgpu_enabled_vm</testName>
+          <skipped>true</skipped>
+          <skippedMessage>Skipping test because suitable hypervisor/host not                        present</skippedMessage>
+          <failedSince>62</failedSince>
+        </case>
+        <case>
+          <duration>1549.077</duration>
+          <className>test_deploy_vm_iso.TestDeployVMFromISO</className>
+          <testName>test_deploy_vm_from_iso</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>694.929</duration>
+          <className>test_deploy_vm_root_resize.TestDeployVM</className>
+          <testName>test_00_deploy_vm_root_resize</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>2.099</duration>
+          <className>test_deploy_vm_root_resize.TestDeployVM</className>
+          <testName>test_01_deploy_vm_root_resize</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run
+    testMethod()
+  File &quot;/root/smoke/test_deploy_vm_root_resize.py&quot;, line 237, in test_01_deploy_vm_root_resize
+    self.assertEqual(success, True, &quot;Check if passing 0 as rootdisksize fails appropriately&quot;)
+  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual
+    raise self.failureException(msg)
+&apos;Check if passing 0 as rootdisksize fails appropriately\n-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------\n=== TestName: test_01_deploy_vm_root_resize | Status : FAILED ===\n\n\n--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: ::::::::::::STARTED : TC: test_01_deploy_vm_root_resize :::::::::::\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;command\&apos;: \&apos;listDomains\&apos;, \&apos;signature\&apos;: \&apos;8YPisJS0U564fHmbDhQwy5PIFRk=\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: ========Sending GET Cmd : listDomains=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;command=listDomains&amp;signature=8YPisJS0U564fHmbDhQwy5PIFRk%3D&amp;response=json HTTP/1.1&quot; 200 1065\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Response : [{primarystorageavailable : u\&apos;Unlimited\&apos;, vpclimit : u\&apos;Unlimited\&apos;, iplimit : u\&apos;Unlimited\&apos;, volumelimit : u\&apos;Unlimited\&apos;, memorytotal : 3584, secondarystorageavailable : u\&apos;Unlimited\&apos;, haschild : False, vmtotal : 10, cputotal : 10, vpctotal : 0, id : u\&apos;119858da-28b7-11e7-b3a0-dac0fec47ef2\&apos;, cpuavailable : u\&apos;Unlimited\&apos;, snapshotlimit : u\&apos;Unlimited\&apos;, networklimit : u\&apos;Unlimited\&apos;, iptotal : 6, volumetotal : 4, projectlimit : u\&apos;Unlimited\&apos;, state : u\&apos;Active\&apos;, networktotal : 2, vpcavailable : u\&apos;Unlimited\&apos;, networkavailable : u\&apos;Unlimited\&apos;, primarystoragetotal : 18, templatelimit : u\&apos;Unlimited\&apos;, snapshottotal : 3, templateavailable : u\&apos;Unlimited\&apos;, vmlimit : u\&apos;Unlimited\&apos;, memoryavailable : u\&apos;Unlimited\&apos;, secondarystoragetotal : 20, templatetotal : 4, projecttotal : 0, projectavailable : u\&apos;Unlimited\&apos;, path : u\&apos;ROOT\&apos;, primarystoragelimit : u\&apos;Unlimited\&apos;, secondarystoragelimit : u\&apos;Unlimited\&apos;, volumeavailable : u\&apos;Unlimited\&apos;, name : u\&apos;ROOT\&apos;, level : 0, vmavailable : u\&apos;Unlimited\&apos;, ipavailable : u\&apos;Unlimited\&apos;, memorylimit : u\&apos;Unlimited\&apos;, cpulimit : u\&apos;Unlimited\&apos;, snapshotavailable : u\&apos;Unlimited\&apos;}]\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;name\&apos;: \&apos;zone-xen\&apos;, \&apos;command\&apos;: \&apos;listZones\&apos;, \&apos;signature\&apos;: \&apos;8qPnSUoJUrNqS38TS5oksA7D1IY=\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: ========Sending GET Cmd : listZones=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;name=zone-xen&amp;command=listZones&amp;signature=8qPnSUoJUrNqS38TS5oksA7D1IY%3D&amp;response=json HTTP/1.1&quot; 200 466\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Response : [{localstorageenabled : False, name : u\&apos;zone-xen\&apos;, guestcidraddress : u\&apos;10.1.1.0/24\&apos;, tags : [], zonetoken : u\&apos;b05d656d-b177-39ab-aea1-33ba9789da41\&apos;, dns2 : u\&apos;\&apos;, dns1 : u\&apos;8.8.8.8\&apos;, securitygroupsenabled : False, allocationstate : u\&apos;Enabled\&apos;, internaldns1 : u\&apos;8.8.8.8\&apos;, dhcpprovider : u\&apos;VirtualRouter\&apos;, resourcedetails : {enable.dynamic.scale.vm : u\&apos;false\&apos;}, networktype : u\&apos;Advanced\&apos;, id : u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, internaldns2 : u\&apos;\&apos;}]\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Payload: {\&apos;zoneid\&apos;: u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, \&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;command\&apos;: \&apos;listTemplates\&apos;, \&apos;signature\&apos;: \&apos;+Xci2QRqa7EAr2B+N4RylaDErmg=\&apos;, \&apos;templatefilter\&apos;: \&apos;featured\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: ========Sending GET Cmd : listTemplates=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?zoneid=e7f6e038-54ed-44fa-89ba-566a1c5d38bd&amp;apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;command=listTemplates&amp;signature=%2BXci2QRqa7EAr2B%2BN4RylaDErmg%3D&amp;templatefilter=featured&amp;response=json HTTP/1.1&quot; 200 1651\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Response : [{domain : u\&apos;ROOT\&apos;, domainid : u\&apos;119858da-28b7-11e7-b3a0-dac0fec47ef2\&apos;, ostypename : u\&apos;CentOS 6.5 (64-bit)\&apos;, zoneid : u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, displaytext : u\&apos;Public Template\&apos;, ostypeid : u\&apos;23f82ba4-28b7-11e7-b3a0-dac0fec47ef2\&apos;, passwordenabled : False, id : u\&apos;7a55bcb1-bf78-4309-aa90-78ffe07d265c\&apos;, size : 2147483648, isready : True, format : u\&apos;VHD\&apos;, templatetype : u\&apos;USER\&apos;, details : {Message.ReservedCapacityFreed.Flag : u\&apos;false\&apos;, platform : u\&apos;apic:true;viridian:true;pae:true;acpi:1;nx:true\&apos;}, zonename : u\&apos;zone-xen\&apos;, status : u\&apos;Download Complete\&apos;, isdynamicallyscalable : False, tags : [], isfeatured : True, sshkeyenabled : False, account : u\&apos;admin\&apos;, isextractable : True, crossZones : False, sourcetemplateid : u\&apos;2894a17e-28b7-11e7-b3a0-dac0fec47ef2\&apos;, name : u\&apos;Public template-8SFTE5\&apos;, created : u\&apos;2017-04-24T04:38:13-0400\&apos;, hypervisor : u\&apos;XenServer\&apos;, ispublic : True}, {domain : u\&apos;ROOT\&apos;, domainid : u\&apos;119858da-28b7-11e7-b3a0-dac0fec47ef2\&apos;, ostypename : u\&apos;CentOS 6.5 (64-bit)\&apos;, zoneid : u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, displaytext : u\&apos;CentOS 6.5(64-bit) no GUI (XenServer)\&apos;, ostypeid : u\&apos;23f82ba4-28b7-11e7-b3a0-dac0fec47ef2\&apos;, passwordenabled : False, id : u\&apos;2894a17e-28b7-11e7-b3a0-dac0fec47ef2\&apos;, size : 2147483648, isready : True, format : u\&apos;VHD\&apos;, templatetype : u\&apos;BUILTIN\&apos;, zonename : u\&apos;zone-xen\&apos;, status : u\&apos;Download Complete\&apos;, isdynamicallyscalable : True, tags : [], isfeatured : True, sshkeyenabled : False, isextractable : True, crossZones : True, account : u\&apos;system\&apos;, name : u\&apos;CentOS 6.5(64-bit) no GUI (XenServer)\&apos;, created : u\&apos;2017-04-24T02:58:04-0400\&apos;, hypervisor : u\&apos;XenServer\&apos;, ispublic : True, checksum : u\&apos;d1a8f3c4e69e31499ef6e59f1ab2401f\&apos;}]\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Payload: {\&apos;username\&apos;: \&apos;test-TestDeployVM-test_01_deploy_vm_root_resize-3SY6UO\&apos;, \&apos;domainid\&apos;: u\&apos;119858da-28b7-11e7-b3a0-dac0fec47ef2\&apos;, \&apos;firstname\&apos;: \&apos;Test\&apos;, \&apos;lastname\&apos;: \&apos;User\&apos;, \&apos;response\&apos;: \&apos;json\&apos;, \&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;command\&apos;: \&apos;createAccount\&apos;, \&apos;accounttype\&apos;: 0, \&apos;signature\&apos;: \&apos;DLScvW3Q4qXINAAcz5HOGl9Ga3I=\&apos;, \&apos;password\&apos;: \&apos;password\&apos;, \&apos;email\&apos;: \&apos;test@test.com\&apos;}\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: ========Sending GET Cmd : createAccount=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?username=test-TestDeployVM-test_01_deploy_vm_root_resize-3SY6UO&amp;domainid=119858da-28b7-11e7-b3a0-dac0fec47ef2&amp;firstname=Test&amp;lastname=User&amp;response=json&amp;apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;command=createAccount&amp;accounttype=0&amp;signature=DLScvW3Q4qXINAAcz5HOGl9Ga3I%3D&amp;password=password&amp;email=test%40test.com HTTP/1.1&quot; 200 1540\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Response : {primarystorageavailable : u\&apos;200\&apos;, domain : u\&apos;ROOT\&apos;, domainid : u\&apos;119858da-28b7-11e7-b3a0-dac0fec47ef2\&apos;, vpclimit : u\&apos;20\&apos;, iplimit : u\&apos;20\&apos;, volumelimit : u\&apos;20\&apos;, memorytotal : 0, secondarystorageavailable : u\&apos;400\&apos;, vmtotal : 0, cputotal : 0, vpctotal : 0, id : u\&apos;e0168e76-d6ea-44c3-8760-0f4f58d5bc8f\&apos;, cpuavailable : u\&apos;40\&apos;, snapshotlimit : u\&apos;20\&apos;, networklimit : u\&apos;20\&apos;, iptotal : 0, volumetotal : 0, projectlimit : u\&apos;Unlimited\&apos;, state : u\&apos;enabled\&apos;, networktotal : 0, accounttype : 0, networkavailable : u\&apos;20\&apos;, primarystoragetotal : 0, templatelimit : u\&apos;20\&apos;, snapshottotal : 0, templateavailable : u\&apos;20\&apos;, vmlimit : u\&apos;20\&apos;, vpcavailable : u\&apos;20\&apos;, memoryavailable : u\&apos;40960\&apos;, vmstopped : 0, secondarystoragetotal : 0, templatetotal : 0, projecttotal : 0, vmrunning : 0, groups : [], projectavailable : u\&apos;Unlimited\&apos;, isdefault : False, primarystoragelimit : u\&apos;200\&apos;, secondarystoragelimit : u\&apos;400\&apos;, volumeavailable : u\&apos;20\&apos;, name : u\&apos;test-TestDeployVM-test_01_deploy_vm_root_resize-3SY6UO\&apos;, vmavailable : u\&apos;20\&apos;, ipavailable : u\&apos;20\&apos;, memorylimit : u\&apos;40960\&apos;, cpulimit : u\&apos;40\&apos;, snapshotavailable : u\&apos;20\&apos;, user : [{username : u\&apos;test-TestDeployVM-test_01_deploy_vm_root_resize-3SY6UO\&apos;, account : u\&apos;test-TestDeployVM-test_01_deploy_vm_root_resize-3SY6UO\&apos;, domainid : u\&apos;119858da-28b7-11e7-b3a0-dac0fec47ef2\&apos;, firstname : u\&apos;Test\&apos;, created : u\&apos;2017-04-24T05:18:42-0400\&apos;, lastname : u\&apos;User\&apos;, domain : u\&apos;ROOT\&apos;, id : u\&apos;1b339d78-5f76-46f6-94cc-f7b4c79c064f\&apos;, iscallerchilddomain : False, state : u\&apos;enabled\&apos;, accounttype : 0, email : u\&apos;test@test.com\&apos;, isdefault : False, accountid : u\&apos;e0168e76-d6ea-44c3-8760-0f4f58d5bc8f\&apos;}]}\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;cpunumber\&apos;: 1, \&apos;memory\&apos;: 256, \&apos;cpuspeed\&apos;: 100, \&apos;response\&apos;: \&apos;json\&apos;, \&apos;name\&apos;: \&apos;Small Instance\&apos;, \&apos;command\&apos;: \&apos;createServiceOffering\&apos;, \&apos;signature\&apos;: \&apos;VEeoRxf6ShJdPPESD77ll3WiER8=\&apos;, \&apos;displaytext\&apos;: \&apos;Small Instance\&apos;}\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: ========Sending GET Cmd : createServiceOffering=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;cpunumber=1&amp;memory=256&amp;cpuspeed=100&amp;response=json&amp;name=Small+Instance&amp;command=createServiceOffering&amp;signature=VEeoRxf6ShJdPPESD77ll3WiER8%3D&amp;displaytext=Small+Instance HTTP/1.1&quot; 200 394\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Response : {iscustomized : False, name : u\&apos;Small Instance\&apos;, created : u\&apos;2017-04-24T05:18:42-0400\&apos;, storagetype : u\&apos;shared\&apos;, limitcpuuse : False, memory : 256, offerha : False, isvolatile : False, provisioningtype : u\&apos;thin\&apos;, cpunumber : 1, cpuspeed : 100, displaytext : u\&apos;Small Instance\&apos;, issystem : False, id : u\&apos;294ef6f5-7d23-4ac8-825f-135eb8fc059f\&apos;, defaultuse : False}\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Payload: {\&apos;domainid\&apos;: u\&apos;119858da-28b7-11e7-b3a0-dac0fec47ef2\&apos;, \&apos;zoneid\&apos;: u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, \&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;details[0].rootdisksize\&apos;: 0, \&apos;serviceofferingid\&apos;: u\&apos;294ef6f5-7d23-4ac8-825f-135eb8fc059f\&apos;, \&apos;displayname\&apos;: \&apos;Test VM\&apos;, \&apos;templateid\&apos;: u\&apos;2894a17e-28b7-11e7-b3a0-dac0fec47ef2\&apos;, \&apos;response\&apos;: \&apos;json\&apos;, \&apos;account\&apos;: u\&apos;test-TestDeployVM-test_01_deploy_vm_root_resize-3SY6UO\&apos;, \&apos;name\&apos;: \&apos;testvm\&apos;, \&apos;command\&apos;: \&apos;deployVirtualMachine\&apos;, \&apos;signature\&apos;: \&apos;RDfBuyJitxuQDnPVl1lXrVnCtPI=\&apos;}\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: ========Sending GET Cmd : deployVirtualMachine=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?domainid=119858da-28b7-11e7-b3a0-dac0fec47ef2&amp;zoneid=e7f6e038-54ed-44fa-89ba-566a1c5d38bd&amp;apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;details%5B0%5D.rootdisksize=0&amp;serviceofferingid=294ef6f5-7d23-4ac8-825f-135eb8fc059f&amp;displayname=Test+VM&amp;templateid=2894a17e-28b7-11e7-b3a0-dac0fec47ef2&amp;response=json&amp;account=test-TestDeployVM-test_01_deploy_vm_root_resize-3SY6UO&amp;name=testvm&amp;command=deployVirtualMachine&amp;signature=RDfBuyJitxuQDnPVl1lXrVnCtPI%3D HTTP/1.1&quot; 431 141\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): ERROR: Exception:[\&apos;Traceback (most recent call last):\\n\&apos;, \&apos;  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/marvin/cloudstackConnection.py&quot;, line 308, in __parseAndGetResponse\\n    response_cls)\\n\&apos;, \&apos;  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/marvin/jsonHelper.py&quot;, line 150, in getResultObj\\n    raise cloudstackException.CloudstackAPIException(respname, errMsg)\\n\&apos;, \&apos;CloudstackAPIException: Execute cmd: deployvirtualmachine failed, due to: errorCode: 431, errorText:Root disk size should be a positive number.\\n\&apos;]\nTraceback (most recent call last):\n  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/marvin/cloudstackConnection.py&quot;, line 308, in __parseAndGetResponse\n    response_cls)\n  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/marvin/jsonHelper.py&quot;, line 150, in getResultObj\n    raise cloudstackException.CloudstackAPIException(respname, errMsg)\nCloudstackAPIException: Execute cmd: deployvirtualmachine failed, due to: errorCode: 431, errorText:Root disk size should be a positive number.\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): ERROR: marvinRequest : CmdName: &lt;marvin.cloudstackAPI.deployVirtualMachine.deployVirtualMachineCmd object at 0x7fd4336bcb50&gt; Exception: [\&apos;Traceback (most recent call last):\\n\&apos;, \&apos;  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/marvin/cloudstackConnection.py&quot;, line 374, in marvinRequest\\n    raise self.__lastError\\n\&apos;, \&apos;CloudstackAPIException: Execute cmd: deployvirtualmachine failed, due to: errorCode: 431, errorText:Root disk size should be a positive number.\\n\&apos;]\nTraceback (most recent call last):\n  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/marvin/cloudstackConnection.py&quot;, line 374, in marvinRequest\n    raise self.__lastError\nCloudstackAPIException: Execute cmd: deployvirtualmachine failed, due to: errorCode: 431, errorText:Root disk size should be a positive number.\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: virtual machine create did not fail appropriately. Error was actually : Execute cmd: deployvirtualmachine failed, due to: errorCode: 431, errorText:Root disk size should be a positive number.\ntest_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): CRITICAL: FAILED: test_01_deploy_vm_root_resize: [\&apos;Traceback (most recent call last):\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run\\n    testMethod()\\n\&apos;, \&apos;  File &quot;/root/smoke/test_deploy_vm_root_resize.py&quot;, line 237, in test_01_deploy_vm_root_resize\\n    self.assertEqual(success, True, &quot;Check if passing 0 as rootdisksize fails appropriately&quot;)\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual\\n    assertion_func(first, second, msg=msg)\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual\\n    raise self.failureException(msg)\\n\&apos;, \&apos;AssertionError: Check if passing 0 as rootdisksize fails appropriately\\n\&apos;]\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&apos;</errorStackTrace>
+          <errorDetails>Check if passing 0 as rootdisksize fails appropriately
+-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------
+=== TestName: test_01_deploy_vm_root_resize | Status : FAILED ===
+
+
+--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------
+-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: ::::::::::::STARTED : TC: test_01_deploy_vm_root_resize :::::::::::
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;command&apos;: &apos;listDomains&apos;, &apos;signature&apos;: &apos;8YPisJS0U564fHmbDhQwy5PIFRk=&apos;, &apos;response&apos;: &apos;json&apos;}
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: ========Sending GET Cmd : listDomains=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;command=listDomains&amp;signature=8YPisJS0U564fHmbDhQwy5PIFRk%3D&amp;response=json HTTP/1.1&quot; 200 1065
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Response : [{primarystorageavailable : u&apos;Unlimited&apos;, vpclimit : u&apos;Unlimited&apos;, iplimit : u&apos;Unlimited&apos;, volumelimit : u&apos;Unlimited&apos;, memorytotal : 3584, secondarystorageavailable : u&apos;Unlimited&apos;, haschild : False, vmtotal : 10, cputotal : 10, vpctotal : 0, id : u&apos;119858da-28b7-11e7-b3a0-dac0fec47ef2&apos;, cpuavailable : u&apos;Unlimited&apos;, snapshotlimit : u&apos;Unlimited&apos;, networklimit : u&apos;Unlimited&apos;, iptotal : 6, volumetotal : 4, projectlimit : u&apos;Unlimited&apos;, state : u&apos;Active&apos;, networktotal : 2, vpcavailable : u&apos;Unlimited&apos;, networkavailable : u&apos;Unlimited&apos;, primarystoragetotal : 18, templatelimit : u&apos;Unlimited&apos;, snapshottotal : 3, templateavailable : u&apos;Unlimited&apos;, vmlimit : u&apos;Unlimited&apos;, memoryavailable : u&apos;Unlimited&apos;, secondarystoragetotal : 20, templatetotal : 4, projecttotal : 0, projectavailable : u&apos;Unlimited&apos;, path : u&apos;ROOT&apos;, primarystoragelimit : u&apos;Unlimited&apos;, secondarystoragelimit : u&apos;Unlimited&apos;, volumeavailable : u&apos;Unlimited&apos;, name : u&apos;ROOT&apos;, level : 0, vmavailable : u&apos;Unlimited&apos;, ipavailable : u&apos;Unlimited&apos;, memorylimit : u&apos;Unlimited&apos;, cpulimit : u&apos;Unlimited&apos;, snapshotavailable : u&apos;Unlimited&apos;}]
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;name&apos;: &apos;zone-xen&apos;, &apos;command&apos;: &apos;listZones&apos;, &apos;signature&apos;: &apos;8qPnSUoJUrNqS38TS5oksA7D1IY=&apos;, &apos;response&apos;: &apos;json&apos;}
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: ========Sending GET Cmd : listZones=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;name=zone-xen&amp;command=listZones&amp;signature=8qPnSUoJUrNqS38TS5oksA7D1IY%3D&amp;response=json HTTP/1.1&quot; 200 466
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Response : [{localstorageenabled : False, name : u&apos;zone-xen&apos;, guestcidraddress : u&apos;10.1.1.0/24&apos;, tags : [], zonetoken : u&apos;b05d656d-b177-39ab-aea1-33ba9789da41&apos;, dns2 : u&apos;&apos;, dns1 : u&apos;8.8.8.8&apos;, securitygroupsenabled : False, allocationstate : u&apos;Enabled&apos;, internaldns1 : u&apos;8.8.8.8&apos;, dhcpprovider : u&apos;VirtualRouter&apos;, resourcedetails : {enable.dynamic.scale.vm : u&apos;false&apos;}, networktype : u&apos;Advanced&apos;, id : u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, internaldns2 : u&apos;&apos;}]
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Payload: {&apos;zoneid&apos;: u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, &apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;command&apos;: &apos;listTemplates&apos;, &apos;signature&apos;: &apos;+Xci2QRqa7EAr2B+N4RylaDErmg=&apos;, &apos;templatefilter&apos;: &apos;featured&apos;, &apos;response&apos;: &apos;json&apos;}
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: ========Sending GET Cmd : listTemplates=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?zoneid=e7f6e038-54ed-44fa-89ba-566a1c5d38bd&amp;apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;command=listTemplates&amp;signature=%2BXci2QRqa7EAr2B%2BN4RylaDErmg%3D&amp;templatefilter=featured&amp;response=json HTTP/1.1&quot; 200 1651
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Response : [{domain : u&apos;ROOT&apos;, domainid : u&apos;119858da-28b7-11e7-b3a0-dac0fec47ef2&apos;, ostypename : u&apos;CentOS 6.5 (64-bit)&apos;, zoneid : u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, displaytext : u&apos;Public Template&apos;, ostypeid : u&apos;23f82ba4-28b7-11e7-b3a0-dac0fec47ef2&apos;, passwordenabled : False, id : u&apos;7a55bcb1-bf78-4309-aa90-78ffe07d265c&apos;, size : 2147483648, isready : True, format : u&apos;VHD&apos;, templatetype : u&apos;USER&apos;, details : {Message.ReservedCapacityFreed.Flag : u&apos;false&apos;, platform : u&apos;apic:true;viridian:true;pae:true;acpi:1;nx:true&apos;}, zonename : u&apos;zone-xen&apos;, status : u&apos;Download Complete&apos;, isdynamicallyscalable : False, tags : [], isfeatured : True, sshkeyenabled : False, account : u&apos;admin&apos;, isextractable : True, crossZones : False, sourcetemplateid : u&apos;2894a17e-28b7-11e7-b3a0-dac0fec47ef2&apos;, name : u&apos;Public template-8SFTE5&apos;, created : u&apos;2017-04-24T04:38:13-0400&apos;, hypervisor : u&apos;XenServer&apos;, ispublic : True}, {domain : u&apos;ROOT&apos;, domainid : u&apos;119858da-28b7-11e7-b3a0-dac0fec47ef2&apos;, ostypename : u&apos;CentOS 6.5 (64-bit)&apos;, zoneid : u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, displaytext : u&apos;CentOS 6.5(64-bit) no GUI (XenServer)&apos;, ostypeid : u&apos;23f82ba4-28b7-11e7-b3a0-dac0fec47ef2&apos;, passwordenabled : False, id : u&apos;2894a17e-28b7-11e7-b3a0-dac0fec47ef2&apos;, size : 2147483648, isready : True, format : u&apos;VHD&apos;, templatetype : u&apos;BUILTIN&apos;, zonename : u&apos;zone-xen&apos;, status : u&apos;Download Complete&apos;, isdynamicallyscalable : True, tags : [], isfeatured : True, sshkeyenabled : False, isextractable : True, crossZones : True, account : u&apos;system&apos;, name : u&apos;CentOS 6.5(64-bit) no GUI (XenServer)&apos;, created : u&apos;2017-04-24T02:58:04-0400&apos;, hypervisor : u&apos;XenServer&apos;, ispublic : True, checksum : u&apos;d1a8f3c4e69e31499ef6e59f1ab2401f&apos;}]
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Payload: {&apos;username&apos;: &apos;test-TestDeployVM-test_01_deploy_vm_root_resize-3SY6UO&apos;, &apos;domainid&apos;: u&apos;119858da-28b7-11e7-b3a0-dac0fec47ef2&apos;, &apos;firstname&apos;: &apos;Test&apos;, &apos;lastname&apos;: &apos;User&apos;, &apos;response&apos;: &apos;json&apos;, &apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;command&apos;: &apos;createAccount&apos;, &apos;accounttype&apos;: 0, &apos;signature&apos;: &apos;DLScvW3Q4qXINAAcz5HOGl9Ga3I=&apos;, &apos;password&apos;: &apos;password&apos;, &apos;email&apos;: &apos;test@test.com&apos;}
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: ========Sending GET Cmd : createAccount=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?username=test-TestDeployVM-test_01_deploy_vm_root_resize-3SY6UO&amp;domainid=119858da-28b7-11e7-b3a0-dac0fec47ef2&amp;firstname=Test&amp;lastname=User&amp;response=json&amp;apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;command=createAccount&amp;accounttype=0&amp;signature=DLScvW3Q4qXINAAcz5HOGl9Ga3I%3D&amp;password=password&amp;email=test%40test.com HTTP/1.1&quot; 200 1540
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Response : {primarystorageavailable : u&apos;200&apos;, domain : u&apos;ROOT&apos;, domainid : u&apos;119858da-28b7-11e7-b3a0-dac0fec47ef2&apos;, vpclimit : u&apos;20&apos;, iplimit : u&apos;20&apos;, volumelimit : u&apos;20&apos;, memorytotal : 0, secondarystorageavailable : u&apos;400&apos;, vmtotal : 0, cputotal : 0, vpctotal : 0, id : u&apos;e0168e76-d6ea-44c3-8760-0f4f58d5bc8f&apos;, cpuavailable : u&apos;40&apos;, snapshotlimit : u&apos;20&apos;, networklimit : u&apos;20&apos;, iptotal : 0, volumetotal : 0, projectlimit : u&apos;Unlimited&apos;, state : u&apos;enabled&apos;, networktotal : 0, accounttype : 0, networkavailable : u&apos;20&apos;, primarystoragetotal : 0, templatelimit : u&apos;20&apos;, snapshottotal : 0, templateavailable : u&apos;20&apos;, vmlimit : u&apos;20&apos;, vpcavailable : u&apos;20&apos;, memoryavailable : u&apos;40960&apos;, vmstopped : 0, secondarystoragetotal : 0, templatetotal : 0, projecttotal : 0, vmrunning : 0, groups : [], projectavailable : u&apos;Unlimited&apos;, isdefault : False, primarystoragelimit : u&apos;200&apos;, secondarystoragelimit : u&apos;400&apos;, volumeavailable : u&apos;20&apos;, name : u&apos;test-TestDeployVM-test_01_deploy_vm_root_resize-3SY6UO&apos;, vmavailable : u&apos;20&apos;, ipavailable : u&apos;20&apos;, memorylimit : u&apos;40960&apos;, cpulimit : u&apos;40&apos;, snapshotavailable : u&apos;20&apos;, user : [{username : u&apos;test-TestDeployVM-test_01_deploy_vm_root_resize-3SY6UO&apos;, account : u&apos;test-TestDeployVM-test_01_deploy_vm_root_resize-3SY6UO&apos;, domainid : u&apos;119858da-28b7-11e7-b3a0-dac0fec47ef2&apos;, firstname : u&apos;Test&apos;, created : u&apos;2017-04-24T05:18:42-0400&apos;, lastname : u&apos;User&apos;, domain : u&apos;ROOT&apos;, id : u&apos;1b339d78-5f76-46f6-94cc-f7b4c79c064f&apos;, iscallerchilddomain : False, state : u&apos;enabled&apos;, accounttype : 0, email : u&apos;test@test.com&apos;, isdefault : False, accountid : u&apos;e0168e76-d6ea-44c3-8760-0f4f58d5bc8f&apos;}]}
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;cpunumber&apos;: 1, &apos;memory&apos;: 256, &apos;cpuspeed&apos;: 100, &apos;response&apos;: &apos;json&apos;, &apos;name&apos;: &apos;Small Instance&apos;, &apos;command&apos;: &apos;createServiceOffering&apos;, &apos;signature&apos;: &apos;VEeoRxf6ShJdPPESD77ll3WiER8=&apos;, &apos;displaytext&apos;: &apos;Small Instance&apos;}
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: ========Sending GET Cmd : createServiceOffering=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;cpunumber=1&amp;memory=256&amp;cpuspeed=100&amp;response=json&amp;name=Small+Instance&amp;command=createServiceOffering&amp;signature=VEeoRxf6ShJdPPESD77ll3WiER8%3D&amp;displaytext=Small+Instance HTTP/1.1&quot; 200 394
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Response : {iscustomized : False, name : u&apos;Small Instance&apos;, created : u&apos;2017-04-24T05:18:42-0400&apos;, storagetype : u&apos;shared&apos;, limitcpuuse : False, memory : 256, offerha : False, isvolatile : False, provisioningtype : u&apos;thin&apos;, cpunumber : 1, cpuspeed : 100, displaytext : u&apos;Small Instance&apos;, issystem : False, id : u&apos;294ef6f5-7d23-4ac8-825f-135eb8fc059f&apos;, defaultuse : False}
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: Payload: {&apos;domainid&apos;: u&apos;119858da-28b7-11e7-b3a0-dac0fec47ef2&apos;, &apos;zoneid&apos;: u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, &apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;details[0].rootdisksize&apos;: 0, &apos;serviceofferingid&apos;: u&apos;294ef6f5-7d23-4ac8-825f-135eb8fc059f&apos;, &apos;displayname&apos;: &apos;Test VM&apos;, &apos;templateid&apos;: u&apos;2894a17e-28b7-11e7-b3a0-dac0fec47ef2&apos;, &apos;response&apos;: &apos;json&apos;, &apos;account&apos;: u&apos;test-TestDeployVM-test_01_deploy_vm_root_resize-3SY6UO&apos;, &apos;name&apos;: &apos;testvm&apos;, &apos;command&apos;: &apos;deployVirtualMachine&apos;, &apos;signature&apos;: &apos;RDfBuyJitxuQDnPVl1lXrVnCtPI=&apos;}
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: ========Sending GET Cmd : deployVirtualMachine=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?domainid=119858da-28b7-11e7-b3a0-dac0fec47ef2&amp;zoneid=e7f6e038-54ed-44fa-89ba-566a1c5d38bd&amp;apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;details%5B0%5D.rootdisksize=0&amp;serviceofferingid=294ef6f5-7d23-4ac8-825f-135eb8fc059f&amp;displayname=Test+VM&amp;templateid=2894a17e-28b7-11e7-b3a0-dac0fec47ef2&amp;response=json&amp;account=test-TestDeployVM-test_01_deploy_vm_root_resize-3SY6UO&amp;name=testvm&amp;command=deployVirtualMachine&amp;signature=RDfBuyJitxuQDnPVl1lXrVnCtPI%3D HTTP/1.1&quot; 431 141
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): ERROR: Exception:[&apos;Traceback (most recent call last):\n&apos;, &apos;  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/marvin/cloudstackConnection.py&quot;, line 308, in __parseAndGetResponse\n    response_cls)\n&apos;, &apos;  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/marvin/jsonHelper.py&quot;, line 150, in getResultObj\n    raise cloudstackException.CloudstackAPIException(respname, errMsg)\n&apos;, &apos;CloudstackAPIException: Execute cmd: deployvirtualmachine failed, due to: errorCode: 431, errorText:Root disk size should be a positive number.\n&apos;]
+Traceback (most recent call last):
+  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/marvin/cloudstackConnection.py&quot;, line 308, in __parseAndGetResponse
+    response_cls)
+  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/marvin/jsonHelper.py&quot;, line 150, in getResultObj
+    raise cloudstackException.CloudstackAPIException(respname, errMsg)
+CloudstackAPIException: Execute cmd: deployvirtualmachine failed, due to: errorCode: 431, errorText:Root disk size should be a positive number.
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): ERROR: marvinRequest : CmdName: &lt;marvin.cloudstackAPI.deployVirtualMachine.deployVirtualMachineCmd object at 0x7fd4336bcb50&gt; Exception: [&apos;Traceback (most recent call last):\n&apos;, &apos;  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/marvin/cloudstackConnection.py&quot;, line 374, in marvinRequest\n    raise self.__lastError\n&apos;, &apos;CloudstackAPIException: Execute cmd: deployvirtualmachine failed, due to: errorCode: 431, errorText:Root disk size should be a positive number.\n&apos;]
+Traceback (most recent call last):
+  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/marvin/cloudstackConnection.py&quot;, line 374, in marvinRequest
+    raise self.__lastError
+CloudstackAPIException: Execute cmd: deployvirtualmachine failed, due to: errorCode: 431, errorText:Root disk size should be a positive number.
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): DEBUG: virtual machine create did not fail appropriately. Error was actually : Execute cmd: deployvirtualmachine failed, due to: errorCode: 431, errorText:Root disk size should be a positive number.
+test_01_deploy_vm_root_resize (test_deploy_vm_root_resize.TestDeployVM): CRITICAL: FAILED: test_01_deploy_vm_root_resize: [&apos;Traceback (most recent call last):\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run\n    testMethod()\n&apos;, &apos;  File &quot;/root/smoke/test_deploy_vm_root_resize.py&quot;, line 237, in test_01_deploy_vm_root_resize\n    self.assertEqual(success, True, &quot;Check if passing 0 as rootdisksize fails appropriately&quot;)\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual\n    assertion_func(first, second, msg=msg)\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual\n    raise self.failureException(msg)\n&apos;, &apos;AssertionError: Check if passing 0 as rootdisksize fails appropriately\n&apos;]
+--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------</errorDetails>
+          <stdout>=== TestName: test_01_deploy_vm_root_resize | Status : FAILED ===
+
+</stdout>
+          <failedSince>72</failedSince>
+        </case>
+        <case>
+          <duration>6.674</duration>
+          <className>test_deploy_vm_root_resize.TestDeployVM</className>
+          <testName>test_02_deploy_vm_root_resize</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>303.211</duration>
+          <className>test_deploy_vm_with_userdata.TestDeployVmWithUserData</className>
+          <testName>test_deployvm_userdata</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>16.414</duration>
+          <className>test_deploy_vm_with_userdata.TestDeployVmWithUserData</className>
+          <testName>test_deployvm_userdata_post</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>224.487</duration>
+          <className>test_deploy_vms_with_varied_deploymentplanners.TestDeployVmWithVariedPlanners</className>
+          <testName>test_deployvm_firstfit</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>31.45</duration>
+          <className>test_deploy_vms_with_varied_deploymentplanners.TestDeployVmWithVariedPlanners</className>
+          <testName>test_deployvm_userconcentrated</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>26.677</duration>
+          <className>test_deploy_vms_with_varied_deploymentplanners.TestDeployVmWithVariedPlanners</className>
+          <testName>test_deployvm_userdispersing</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.346</duration>
+          <className>test_disk_offerings.TestCreateDiskOffering</className>
+          <testName>test_01_create_disk_offering</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.184</duration>
+          <className>test_disk_offerings.TestCreateDiskOffering</className>
+          <testName>test_02_create_sparse_type_disk_offering</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.218</duration>
+          <className>test_disk_offerings.TestCreateDiskOffering</className>
+          <testName>test_04_create_fat_type_disk_offering</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.183</duration>
+          <className>test_disk_offerings.TestDiskOfferings</className>
+          <testName>test_02_edit_disk_offering</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.109</duration>
+          <className>test_disk_offerings.TestDiskOfferings</className>
+          <testName>test_03_delete_disk_offering</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.18</duration>
+          <className>test_global_settings.TestUpdateConfigWithScope</className>
+          <testName>test_UpdateConfigParamWithScope</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.086</duration>
+          <className>test_global_settings.TestUpdateConfigWithScope</className>
+          <testName>test_list_capabilities</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>10.92</duration>
+          <className>test_guest_vlan_range.TestDedicateGuestVlanRange</className>
+          <testName>test_dedicateGuestVlanRange</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>314.805</duration>
+          <className>test_internal_lb.TestInternalLb</className>
+          <testName>test02_internallb_haproxy_stats_on_all_interfaces</testName>
+          <skipped>false</skipped>
+          <stdout>vpc_intlb_test_02 10.1.0.0/16
+</stdout>
+          <stderr>====Trying SSH Connection: Host:10.112.32.9 User:root                                   Port:22 RetryCnt:4===
+===SSH to Host 10.112.32.9 port : 22 SUCCESSFUL===
+{Cmd: /usr/bin/wget -T3 -qO- --user=admin1 --password=AdMiN123 http://10.1.2.254:8081/admin?stats via Host: 10.112.32.9} {returns: [u&apos;&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&apos;, u&apos;&quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;&apos;, u&apos;&lt;html&gt;&lt;head&gt;&lt;title&gt;Statistics Report for HAProxy&lt;/title&gt;&apos;, u&apos;&lt;meta http-equiv=&quot;content-type&quot; c
+...[truncated 13926 chars]...
+/u&gt;&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;?&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;div class=tips&gt;compression: in=0 out=0 bypassed=0 savings=0%&lt;/div&gt;&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;&lt;u&gt;0&lt;div class=tips&gt;Connection resets during transfers: 0 client, 0 server&lt;/div&gt;&lt;/u&gt;&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td class=ac&gt;10s &lt;font color=&quot;red&quot;&gt;&lt;b&gt;DOWN&lt;/b&gt;&lt;/font&gt;&lt;/td&gt;&lt;td class=ac&gt;&amp;nbsp;&lt;/td&gt;&lt;td class=ac&gt;0&lt;/td&gt;&lt;td class=ac&gt;0&lt;/td&gt;&lt;td class=ac&gt;0&lt;/td&gt;&lt;td class=ac&gt;&amp;nbsp;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;10s&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&apos;, u&apos;&lt;/body&gt;&lt;/html&gt;&apos;]}
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>513.281</duration>
+          <className>test_internal_lb.TestInternalLb</className>
+          <testName>test_01_internallb_roundrobin_1VPC_3VM_HTTP_port80</testName>
+          <skipped>false</skipped>
+          <stdout>vpc_intlb_test01 10.1.0.0/16
+</stdout>
+          <stderr>====Trying SSH Connection: Host:10.112.32.10 User:root                                   Port:2001 RetryCnt:8===
+===SSH to Host 10.112.32.10 port : 2001 SUCCESSFUL===
+{Cmd: /sbin/ip addr show eth0 |grep &apos;inet &apos;| cut -f6 -d&apos; &apos; &gt; /tmp/index.html via Host: 10.112.32.10} {returns: []}
+{Cmd: /usr/sbin/httpd -v -p 0.0.0.0:80 -h /tmp/ via Host: 10.112.32.10} {returns: []}
+====Trying SSH Connection: Host:10.112.32.10 User:root                                   Port:2002 RetryCnt:8===
+====Trying SSH Conn
+...[truncated 15268 chars]...
+ull via Host: 10.112.32.4} {returns: [u&apos;10.1.2.66/24&apos;]}
+{Cmd: /usr/bin/wget -T2 -qO- http://10.1.2.137/ 2&gt;/dev/null via Host: 10.112.32.4} {returns: [u&apos;10.1.2.3/24&apos;]}
+{Cmd: /usr/bin/wget -T2 -qO- http://10.1.2.137/ 2&gt;/dev/null via Host: 10.112.32.4} {returns: [u&apos;10.1.2.3/24&apos;]}
+{Cmd: /usr/bin/wget -T2 -qO- http://10.1.2.137/ 2&gt;/dev/null via Host: 10.112.32.4} {returns: [u&apos;10.1.2.3/24&apos;]}
+{Cmd: /usr/bin/wget -T2 -qO- http://10.1.2.137/ 2&gt;/dev/null via Host: 10.112.32.4} {returns: [u&apos;10.1.2.3/24&apos;]}
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>66.486</duration>
+          <className>test_iso.TestCreateIso</className>
+          <testName>test_01_create_iso</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.098</duration>
+          <className>test_iso.TestISO</className>
+          <testName>test_02_edit_iso</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>95.364</duration>
+          <className>test_iso.TestISO</className>
+          <testName>test_03_delete_iso</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>5.211</duration>
+          <className>test_iso.TestISO</className>
+          <testName>test_04_extract_Iso</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.106</duration>
+          <className>test_iso.TestISO</className>
+          <testName>test_05_iso_permissions</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>test_iso.TestISO</className>
+          <testName>test_06_copy_iso</testName>
+          <skipped>true</skipped>
+          <skippedMessage>Not enough zones available to perform copy template</skippedMessage>
+          <failedSince>70</failedSince>
+        </case>
+        <case>
+          <duration>0.128</duration>
+          <className>test_iso.TestISO</className>
+          <testName>test_07_list_default_iso</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.059</duration>
+          <className>test_list_ids_parameter.TestListIdsParams</className>
+          <testName>test_01_list_volumes</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.075</duration>
+          <className>test_list_ids_parameter.TestListIdsParams</className>
+          <testName>test_02_list_templates</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.084</duration>
+          <className>test_list_ids_parameter.TestListIdsParams</className>
+          <testName>test_03_list_snapshots</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>163.355</duration>
+          <className>test_loadbalance.TestLoadBalance</className>
+          <testName>test_01_create_lb_rule_src_nat</testName>
+          <skipped>false</skipped>
+          <stderr>====Trying SSH Connection: Host:10.112.32.9 User:root                                   Port:2222 RetryCnt:5===
+===SSH to Host 10.112.32.9 port : 2222 SUCCESSFUL===
+{Cmd: uname via Host: 10.112.32.9} {returns: [u&apos;Linux&apos;]}
+====Trying SSH Connection: Host:10.112.32.9 User:root                                   Port:2222 RetryCnt:5===
+====Trying SSH Connection: Host:10.112.32.9 User:root                                   Port:2222 RetryCnt:5===
+===SSH to Host 10.112.32.9 port : 2222 SUCCESSFUL===
+=
+...[truncated 43786 chars]...
+                            Port:2222 RetryCnt:0===
+====Trying SSH Connection: Host:10.112.32.9 User:root                                   Port:2222 RetryCnt:0===
+====Trying SSH Connection: Host:10.112.32.9 User:root                                   Port:2222 RetryCnt:0===
+====Trying SSH Connection: Host:10.112.32.9 User:root                                   Port:2222 RetryCnt:0===
+====Trying SSH Connection: Host:10.112.32.9 User:root                                   Port:2222 RetryCnt:0===
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>159.937</duration>
+          <className>test_loadbalance.TestLoadBalance</className>
+          <testName>test_02_create_lb_rule_non_nat</testName>
+          <skipped>false</skipped>
+          <stderr>====Trying SSH Connection: Host:10.112.32.9 User:root                                   Port:2222 RetryCnt:5===
+===SSH to Host 10.112.32.9 port : 2222 SUCCESSFUL===
+{Cmd: uname via Host: 10.112.32.9} {returns: [u&apos;Linux&apos;]}
+====Trying SSH Connection: Host:10.112.32.9 User:root                                   Port:2222 RetryCnt:5===
+====Trying SSH Connection: Host:10.112.32.9 User:root                                   Port:2222 RetryCnt:5===
+===SSH to Host 10.112.32.9 port : 2222 SUCCESSFUL===
+=
+...[truncated 43786 chars]...
+                            Port:2222 RetryCnt:0===
+====Trying SSH Connection: Host:10.112.32.9 User:root                                   Port:2222 RetryCnt:0===
+====Trying SSH Connection: Host:10.112.32.9 User:root                                   Port:2222 RetryCnt:0===
+====Trying SSH Connection: Host:10.112.32.9 User:root                                   Port:2222 RetryCnt:0===
+====Trying SSH Connection: Host:10.112.32.9 User:root                                   Port:2222 RetryCnt:0===
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>151.929</duration>
+          <className>test_loadbalance.TestLoadBalance</className>
+          <testName>test_assign_and_removal_lb</testName>
+          <skipped>false</skipped>
+          <stderr>====Trying SSH Connection: Host:10.112.32.9 User:root                                   Port:2222 RetryCnt:5===
+===SSH to Host 10.112.32.9 port : 2222 SUCCESSFUL===
+{Cmd: uname via Host: 10.112.32.9} {returns: [u&apos;Linux&apos;]}
+====Trying SSH Connection: Host:10.112.32.9 User:root                                   Port:2222 RetryCnt:5===
+====Trying SSH Connection: Host:10.112.32.9 User:root                                   Port:2222 RetryCnt:5===
+===SSH to Host 10.112.32.9 port : 2222 SUCCESSFUL===
+=
+...[truncated 13652 chars]...
+ia Host: 10.112.32.9} {returns: [u&apos;Linux&apos;]}
+{Cmd: uname via Host: 10.112.32.9} {returns: [u&apos;Linux&apos;]}
+{Cmd: uname via Host: 10.112.32.9} {returns: [u&apos;Linux&apos;]}
+{Cmd: uname via Host: 10.112.32.9} {returns: [u&apos;Linux&apos;]}
+{Cmd: uname via Host: 10.112.32.9} {returns: [u&apos;Linux&apos;]}
+{Cmd: uname via Host: 10.112.32.9} {returns: [u&apos;Linux&apos;]}
+{Cmd: uname via Host: 10.112.32.9} {returns: [u&apos;Linux&apos;]}
+{Cmd: uname via Host: 10.112.32.9} {returns: [u&apos;Linux&apos;]}
+{Cmd: uname via Host: 10.112.32.9} {returns: [u&apos;Linux&apos;]}
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>17.517</duration>
+          <className>test_login.TestLogin</className>
+          <testName>login_test_saml_user</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>429.422</duration>
+          <className>test_multipleips_per_nic.TestDeployVM</className>
+          <testName>test_nic_secondaryip_add_remove</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>337.145</duration>
+          <className>test_network.TestDeleteAccount</className>
+          <testName>test_delete_account</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>54.03</duration>
+          <className>test_network.TestPortForwarding</className>
+          <testName>test_01_port_fwd_on_src_nat</testName>
+          <skipped>false</skipped>
+          <stderr>====Trying SSH Connection: Host:10.112.32.4 User:root                                   Port:22 RetryCnt:20===
+===SSH to Host 10.112.32.4 port : 22 SUCCESSFUL===
+====Trying SSH Connection: Host:10.112.32.4 User:root                                   Port:22 RetryCnt:2===
+====Trying SSH Connection: Host:10.112.32.4 User:root                                   Port:22 RetryCnt:2===
+SshClient: Exception under createConnection: [&apos;Traceback (most recent call last):\n&apos;, &apos;  File &quot;/root/virt/xen_virt/lib
+...[truncated 5870 chars]...
+ction()
+  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/paramiko/client.py&quot;, line 305, in &lt;lambda&gt;
+    retry_on_signal(lambda: sock.connect(addr))
+  File &quot;/usr/local/lib/python2.7/socket.py&quot;, line 228, in meth
+    return getattr(self._sock,name)(*args)
+timeout: timed out
+====Trying SSH Connection: Host:10.112.32.4 User:root                                   Port:22 RetryCnt:0===
+====Trying SSH Connection: Host:10.112.32.4 User:root                                   Port:22 RetryCnt:0===
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>57.094</duration>
+          <className>test_network.TestPortForwarding</className>
+          <testName>test_02_port_fwd_on_non_src_nat</testName>
+          <skipped>false</skipped>
+          <stderr>====Trying SSH Connection: Host:10.112.32.5 User:root                                   Port:22 RetryCnt:2===
+SshClient: Exception under createConnection: [&apos;Traceback (most recent call last):\n&apos;, &apos;  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/marvin/sshClient.py&quot;, line 121, in createConnection\n    timeout=self.timeout)\n&apos;, &apos;  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/paramiko/client.py&quot;, line 305, in connect\n    retry_on_signal(lambda: sock.connect(addr))\n&apos;, &apos;  File &quot;/ro
+...[truncated 2354 chars]...
+/root/virt/xen_virt/lib/python2.7/site-packages/paramiko/util.py&quot;, line 269, in retry_on_signal
+    return function()
+  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/paramiko/client.py&quot;, line 305, in &lt;lambda&gt;
+    retry_on_signal(lambda: sock.connect(addr))
+  File &quot;/usr/local/lib/python2.7/socket.py&quot;, line 228, in meth
+    return getattr(self._sock,name)(*args)
+timeout: timed out
+====Trying SSH Connection: Host:10.112.32.5 User:root                                   Port:22 RetryCnt:0===
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>test_network.TestPortForwarding</className>
+          <testName>test_guest_traffic_port_groups_isolated_network</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>40.663</duration>
+          <className>test_network.TestPublicIP</className>
+          <testName>test_public_ip_admin_account</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>10.705</duration>
+          <className>test_network.TestPublicIP</className>
+          <testName>test_public_ip_user_account</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>568.898</duration>
+          <className>test_network.TestRebootRouter</className>
+          <testName>test_reboot_router</testName>
+          <skipped>false</skipped>
+          <stderr>====Trying SSH Connection: Host:10.112.32.5 User:root                                   Port:22 RetryCnt:5===
+===SSH to Host 10.112.32.5 port : 22 SUCCESSFUL===
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>327.315</duration>
+          <className>test_network.TestReleaseIP</className>
+          <testName>test_releaseIP</testName>
+          <skipped>false</skipped>
+          <stderr>====Trying SSH Connection: Host:10.112.32.5 User:root                                   Port:22 RetryCnt:2===
+SshClient: Exception under createConnection: [&apos;Traceback (most recent call last):\n&apos;, &apos;  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/marvin/sshClient.py&quot;, line 121, in createConnection\n    timeout=self.timeout)\n&apos;, &apos;  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/paramiko/client.py&quot;, line 305, in connect\n    retry_on_signal(lambda: sock.connect(addr))\n&apos;, &apos;  File &quot;/ro
+...[truncated 2354 chars]...
+/root/virt/xen_virt/lib/python2.7/site-packages/paramiko/util.py&quot;, line 269, in retry_on_signal
+    return function()
+  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/paramiko/client.py&quot;, line 305, in &lt;lambda&gt;
+    retry_on_signal(lambda: sock.connect(addr))
+  File &quot;/usr/local/lib/python2.7/socket.py&quot;, line 228, in meth
+    return getattr(self._sock,name)(*args)
+timeout: timed out
+====Trying SSH Connection: Host:10.112.32.5 User:root                                   Port:22 RetryCnt:0===
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>202.095</duration>
+          <className>test_network.TestReleaseIP</className>
+          <testName>test_releaseIP_with_tag</testName>
+          <skipped>false</skipped>
+          <stderr>====Trying SSH Connection: Host:10.112.32.6 User:root                                   Port:22 RetryCnt:2===
+SshClient: Exception under createConnection: [&apos;Traceback (most recent call last):\n&apos;, &apos;  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/marvin/sshClient.py&quot;, line 121, in createConnection\n    timeout=self.timeout)\n&apos;, &apos;  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/paramiko/client.py&quot;, line 324, in connect\n    raise NoValidConnectionsError(errors)\n&apos;, &apos;NoValidConnection
+...[truncated 1030 chars]...
+raceback (most recent call last):
+  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/marvin/sshClient.py&quot;, line 121, in createConnection
+    timeout=self.timeout)
+  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/paramiko/client.py&quot;, line 324, in connect
+    raise NoValidConnectionsError(errors)
+NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 10.112.32.6
+====Trying SSH Connection: Host:10.112.32.6 User:root                                   Port:22 RetryCnt:0===
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>91.823</duration>
+          <className>test_network.TestRouterRules</className>
+          <testName>test_network_rules_acquired_public_ip_1_static_nat_rule</testName>
+          <skipped>false</skipped>
+          <stderr>====Trying SSH Connection: Host:10.112.10.104 User:root                                   Port:22 RetryCnt:60===
+===SSH to Host 10.112.10.104 port : 22 SUCCESSFUL===
+{Cmd: ssh -i ~/.ssh/id_rsa.cloud -ostricthostkeychecking=no -oUserKnownHostsFile=/dev/null -p 3922 169.254.3.52 ip addr via Host: 10.112.10.104} {returns: [u&apos;1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 16436 qdisc noqueue state UNKNOWN&apos;, u&apos;    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00&apos;, u&apos;    inet 127.0.0.1/8 scope host lo&apos;, u&apos;2: 
+...[truncated 19283 chars]...
+  return getattr(self._sock,name)(*args)
+timeout: timed out
+====Trying SSH Connection: Host:10.112.32.5 User:root                                   Port:22 RetryCnt:0===
+====Trying SSH Connection: Host:10.112.32.5 User:root                                   Port:22 RetryCnt:0===
+====Trying SSH Connection: Host:10.112.32.5 User:root                                   Port:22 RetryCnt:0===
+====Trying SSH Connection: Host:10.112.32.5 User:root                                   Port:22 RetryCnt:0===
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>62.382</duration>
+          <className>test_network.TestRouterRules</className>
+          <testName>test_network_rules_acquired_public_ip_2_nat_rule</testName>
+          <skipped>false</skipped>
+          <stderr>====Trying SSH Connection: Host:10.112.10.104 User:root                                   Port:22 RetryCnt:60===
+===SSH to Host 10.112.10.104 port : 22 SUCCESSFUL===
+{Cmd: ssh -i ~/.ssh/id_rsa.cloud -ostricthostkeychecking=no -oUserKnownHostsFile=/dev/null -p 3922 169.254.3.52 ip addr via Host: 10.112.10.104} {returns: [u&apos;1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 16436 qdisc noqueue state UNKNOWN&apos;, u&apos;    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00&apos;, u&apos;    inet 127.0.0.1/8 scope host lo&apos;, u&apos;2: 
+...[truncated 12546 chars]...
+ retry_on_signal(lambda: sock.connect(addr))
+  File &quot;/usr/local/lib/python2.7/socket.py&quot;, line 228, in meth
+    return getattr(self._sock,name)(*args)
+timeout: timed out
+====Trying SSH Connection: Host:10.112.32.5 User:root                                   Port:22 RetryCnt:0===
+====Trying SSH Connection: Host:10.112.32.5 User:root                                   Port:22 RetryCnt:0===
+====Trying SSH Connection: Host:10.112.32.5 User:root                                   Port:22 RetryCnt:0===
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>77.842</duration>
+          <className>test_network.TestRouterRules</className>
+          <testName>test_network_rules_acquired_public_ip_3_Load_Balancer_Rule</testName>
+          <skipped>false</skipped>
+          <stderr>====Trying SSH Connection: Host:10.112.10.104 User:root                                   Port:22 RetryCnt:60===
+===SSH to Host 10.112.10.104 port : 22 SUCCESSFUL===
+{Cmd: ssh -i ~/.ssh/id_rsa.cloud -ostricthostkeychecking=no -oUserKnownHostsFile=/dev/null -p 3922 169.254.3.52 ip addr via Host: 10.112.10.104} {returns: [u&apos;1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 16436 qdisc noqueue state UNKNOWN&apos;, u&apos;    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00&apos;, u&apos;    inet 127.0.0.1/8 scope host lo&apos;, u&apos;2: 
+...[truncated 12546 chars]...
+ retry_on_signal(lambda: sock.connect(addr))
+  File &quot;/usr/local/lib/python2.7/socket.py&quot;, line 228, in meth
+    return getattr(self._sock,name)(*args)
+timeout: timed out
+====Trying SSH Connection: Host:10.112.32.5 User:root                                   Port:22 RetryCnt:0===
+====Trying SSH Connection: Host:10.112.32.5 User:root                                   Port:22 RetryCnt:0===
+====Trying SSH Connection: Host:10.112.32.5 User:root                                   Port:22 RetryCnt:0===
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>145.22</duration>
+          <className>test_network_acl.TestNetworkACL</className>
+          <testName>test_network_acl</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>1058.221</duration>
+          <className>test_nic.TestNic</className>
+          <testName>test_01_nic</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>test_nic_adapter_type.TestAdapterTypeForNic</className>
+          <testName>test_vm_nic_adapter_vmxnet3</testName>
+          <skipped>true</skipped>
+          <skippedMessage>VCenter API Integration Remaining</skippedMessage>
+          <failedSince>62</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>test_nicira_controller.TestNiciraContoller</className>
+          <testName>test_01_nicira_controller</testName>
+          <skipped>true</skipped>
+          <skippedMessage>nicira settings not found in config file</skippedMessage>
+          <failedSince>62</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>test_nicira_controller.TestNiciraContoller</className>
+          <testName>test_02_nicira_controller_redirect</testName>
+          <skipped>true</skipped>
+          <skippedMessage>nicira settings not found in config file</skippedMessage>
+          <failedSince>62</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>test_nicira_controller.TestNiciraContoller</className>
+          <testName>test_03_nicira_tunnel_guest_network</testName>
+          <skipped>true</skipped>
+          <skippedMessage>nicira settings not found in config file</skippedMessage>
+          <failedSince>62</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>test_nicira_controller.TestNiciraContoller</className>
+          <testName>test_04_nicira_shared_networks_numerical_vlanid</testName>
+          <skipped>true</skipped>
+          <skippedMessage>nicira settings not found in config file</skippedMessage>
+          <failedSince>62</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>test_nicira_controller.TestNiciraContoller</className>
+          <testName>test_05_nicira_shared_networks_lrouter_uuid_vlan_id</testName>
+          <skipped>true</skipped>
+          <skippedMessage>nicira settings not found in config file</skippedMessage>
+          <failedSince>62</failedSince>
+        </case>
+        <case>
+          <duration>15.716</duration>
+          <className>test_non_contigiousvlan.TestUpdatePhysicalNetwork</className>
+          <testName>test_extendPhysicalNetworkVlan</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.187</duration>
+          <className>test_over_provisioning.TestUpdateOverProvision</className>
+          <testName>test_UpdateStorageOverProvisioningFactor</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>15.978</duration>
+          <className>test_portable_publicip.TestPortablePublicIPAcquire</className>
+          <testName>test_createPortablePublicIPAcquire</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>15.506</duration>
+          <className>test_portable_publicip.TestPortablePublicIPRange</className>
+          <testName>test_createPortablePublicIPRange</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.105</duration>
+          <className>test_primary_storage.TestPrimaryStorageServices</className>
+          <testName>test_01_primary_storage_iscsi</testName>
+          <skipped>true</skipped>
+          <skippedMessage>iscsi name or url is empty please check  test config for valid values</skippedMessage>
+          <failedSince>62</failedSince>
+        </case>
+        <case>
+          <duration>40.174</duration>
+          <className>test_primary_storage.TestPrimaryStorageServices</className>
+          <testName>test_01_primary_storage_nfs</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>179.428</duration>
+          <className>test_privategw_acl.TestPrivateGwACL</className>
+          <testName>test_privategw_acl</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>1.346</duration>
+          <className>test_public_ip_range.TestDedicatePublicIPRange</className>
+          <testName>test_dedicatePublicIpRange</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>5.848</duration>
+          <className>test_pvlan.TestPVLAN</className>
+          <testName>test_create_pvlan_network</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.2</duration>
+          <className>test_regions.TestRegions</className>
+          <testName>test_createRegion</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>41.113</duration>
+          <className>test_reset_vm_on_reboot.TestResetVmOnReboot</className>
+          <testName>test_01_reset_vm_on_reboot</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.271</duration>
+          <className>test_resource_detail.TestResourceDetail</className>
+          <testName>test_01_updatevolumedetail</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.122</duration>
+          <className>test_routers.TestRouterServices</className>
+          <testName>test_01_router_internal_basic</testName>
+          <skipped>true</skipped>
+          <skippedMessage>Marvin configuration has no host credentials to                            check router services</skippedMessage>
+          <failedSince>74</failedSince>
+        </case>
+        <case>
+          <duration>0.125</duration>
+          <className>test_routers.TestRouterServices</className>
+          <testName>test_02_router_internal_adv</testName>
+          <skipped>true</skipped>
+          <skippedMessage>Marvin configuration has no host credentials                            to check router services</skippedMessage>
+          <failedSince>74</failedSince>
+        </case>
+        <case>
+          <duration>127.143</duration>
+          <className>test_routers.TestRouterServices</className>
+          <testName>test_03_restart_network_cleanup</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>5.452</duration>
+          <className>test_routers.TestRouterServices</className>
+          <testName>test_04_restart_network_wo_cleanup</testName>
+          <skipped>true</skipped>
+          <skippedMessage>Marvin configuration has no host credentials                            to check router services</skippedMessage>
+          <failedSince>74</failedSince>
+        </case>
+        <case>
+          <duration>0.078</duration>
+          <className>test_routers.TestRouterServices</className>
+          <testName>test_05_router_basic</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.128</duration>
+          <className>test_routers.TestRouterServices</className>
+          <testName>test_06_router_advanced</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>20.448</duration>
+          <className>test_routers.TestRouterServices</className>
+          <testName>test_07_stop_router</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>50.78</duration>
+          <className>test_routers.TestRouterServices</className>
+          <testName>test_08_start_router</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>65.863</duration>
+          <className>test_routers.TestRouterServices</className>
+          <testName>test_09_reboot_router</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>10.288</duration>
+          <className>test_scale_vm.TestScaleVm</className>
+          <testName>test_01_scale_vm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.889</duration>
+          <className>test_secondary_storage.TestSecStorageServices</className>
+          <testName>test_01_sys_vm_start</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.449</duration>
+          <className>test_secondary_storage.TestSecStorageServices</className>
+          <testName>test_02_sys_template_ready</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.32</duration>
+          <className>test_service_offerings.TestCreateServiceOffering</className>
+          <testName>test_01_create_service_offering</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.154</duration>
+          <className>test_service_offerings.TestServiceOfferings</className>
+          <testName>test_02_edit_service_offering</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.063</duration>
+          <className>test_service_offerings.TestServiceOfferings</className>
+          <testName>test_03_delete_service_offering</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>104.379</duration>
+          <className>test_service_offerings.TestServiceOfferings</className>
+          <testName>test_04_change_offering_small</testName>
+          <skipped>false</skipped>
+          <stderr>====Trying SSH Connection: Host:10.112.32.7 User:root                                   Port:22 RetryCnt:20===
+SshClient: Exception under createConnection: [&apos;Traceback (most recent call last):\n&apos;, &apos;  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/marvin/sshClient.py&quot;, line 121, in createConnection\n    timeout=self.timeout)\n&apos;, &apos;  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/paramiko/client.py&quot;, line 305, in connect\n    retry_on_signal(lambda: sock.connect(addr))\n&apos;, &apos;  File &quot;/r
+...[truncated 3902 chars]...
+e:                0 kB&apos;, u&apos;WritebackTmp:          0 kB&apos;, u&apos;CommitLimit:      457620 kB&apos;, u&apos;Committed_AS:      58440 kB&apos;, u&apos;VmallocTotal:   34359738367 kB&apos;, u&apos;VmallocUsed:        4920 kB&apos;, u&apos;VmallocChunk:   34359732216 kB&apos;, u&apos;HardwareCorrupted:     0 kB&apos;, u&apos;AnonHugePages:         0 kB&apos;, u&apos;HugePages_Total:       0&apos;, u&apos;HugePages_Free:        0&apos;, u&apos;HugePages_Rsvd:        0&apos;, u&apos;HugePages_Surp:        0&apos;, u&apos;Hugepagesize:       2048 kB&apos;, u&apos;DirectMap4k:      558080 kB&apos;, u&apos;DirectMap2M:           0 kB&apos;]}
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>142.375</duration>
+          <className>test_snapshots.TestSnapshotRootDisk</className>
+          <testName>test_01_snapshot_root_disk</testName>
+          <skipped>false</skipped>
+          <stderr>====Trying SSH Connection: Host:10.112.10.102 User:root                                   Port:22 RetryCnt:60===
+===SSH to Host 10.112.10.102 port : 22 SUCCESSFUL===
+{Cmd: mkdir -p %s /mnt/tmp via Host: 10.112.10.102} {returns: []}
+{Cmd: mount -t nfs 10.112.10.102:/export/automation/sec_xen /mnt/tmp via Host: 10.112.10.102} {returns: []}
+{Cmd: test -f /mnt/tmp/snapshots/24/48/38c70b1b-95d1-4bf0-ae0a-5f9c51b1e82f.vhd &amp;&amp; echo &apos;snapshot exists&apos; via Host: 10.112.10.102} {returns: [u&apos;snapshot exists&apos;]}
+{Cmd: cd via Host: 10.112.10.102} {returns: []}
+{Cmd: umount /mnt/tmp via Host: 10.112.10.102} {returns: []}
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>2.525</duration>
+          <className>test_ssvm.TestSSVMs</className>
+          <testName>test_01_list_sec_storage_vm</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run
+    testMethod()
+  File &quot;/root/smoke/test_ssvm.py&quot;, line 125, in test_01_list_sec_storage_vm
+    &quot;Check list response returns a valid list&quot;
+  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual
+    raise self.failureException(msg)
+&apos;Check list response returns a valid list\n-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------\n=== TestName: test_01_list_sec_storage_vm | Status : FAILED ===\n\n\n--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\ntest_01_list_sec_storage_vm (test_ssvm.TestSSVMs): DEBUG: ::::::::::::STARTED : TC: test_01_list_sec_storage_vm :::::::::::\ntest_01_list_sec_storage_vm (test_ssvm.TestSSVMs): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;name\&apos;: \&apos;zone-xen\&apos;, \&apos;command\&apos;: \&apos;listZones\&apos;, \&apos;signature\&apos;: \&apos;8qPnSUoJUrNqS38TS5oksA7D1IY=\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_01_list_sec_storage_vm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listZones=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;name=zone-xen&amp;command=listZones&amp;signature=8qPnSUoJUrNqS38TS5oksA7D1IY%3D&amp;response=json HTTP/1.1&quot; 200 412\ntest_01_list_sec_storage_vm (test_ssvm.TestSSVMs): DEBUG: Response : [{localstorageenabled : False, name : u\&apos;zone-xen\&apos;, guestcidraddress : u\&apos;10.1.1.0/24\&apos;, tags : [], zonetoken : u\&apos;b05d656d-b177-39ab-aea1-33ba9789da41\&apos;, dns2 : u\&apos;\&apos;, dns1 : u\&apos;8.8.8.8\&apos;, securitygroupsenabled : False, allocationstate : u\&apos;Enabled\&apos;, internaldns1 : u\&apos;8.8.8.8\&apos;, dhcpprovider : u\&apos;VirtualRouter\&apos;, networktype : u\&apos;Advanced\&apos;, id : u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, internaldns2 : u\&apos;\&apos;}]\ntest_01_list_sec_storage_vm (test_ssvm.TestSSVMs): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;state\&apos;: \&apos;Running\&apos;, \&apos;command\&apos;: \&apos;listSystemVms\&apos;, \&apos;signature\&apos;: \&apos;SWWSuVJyUrFcdZ6PKWezD+NGHWY=\&apos;, \&apos;systemvmtype\&apos;: \&apos;secondarystoragevm\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_01_list_sec_storage_vm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listSystemVms=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;state=Running&amp;command=listSystemVms&amp;signature=SWWSuVJyUrFcdZ6PKWezD%2BNGHWY%3D&amp;systemvmtype=secondarystoragevm&amp;response=json HTTP/1.1&quot; 200 28\ntest_01_list_sec_storage_vm (test_ssvm.TestSSVMs): DEBUG: Response : None\ntest_01_list_sec_storage_vm (test_ssvm.TestSSVMs): CRITICAL: FAILED: test_01_list_sec_storage_vm: [\&apos;Traceback (most recent call last):\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run\\n    testMethod()\\n\&apos;, \&apos;  File &quot;/root/smoke/test_ssvm.py&quot;, line 125, in test_01_list_sec_storage_vm\\n    &quot;Check list response returns a valid list&quot;\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual\\n    assertion_func(first, second, msg=msg)\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual\\n    raise self.failureException(msg)\\n\&apos;, \&apos;AssertionError: Check list response returns a valid list\\n\&apos;]\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&apos;</errorStackTrace>
+          <errorDetails>Check list response returns a valid list
+-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------
+=== TestName: test_01_list_sec_storage_vm | Status : FAILED ===
+
+
+--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------
+-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------
+test_01_list_sec_storage_vm (test_ssvm.TestSSVMs): DEBUG: ::::::::::::STARTED : TC: test_01_list_sec_storage_vm :::::::::::
+test_01_list_sec_storage_vm (test_ssvm.TestSSVMs): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;name&apos;: &apos;zone-xen&apos;, &apos;command&apos;: &apos;listZones&apos;, &apos;signature&apos;: &apos;8qPnSUoJUrNqS38TS5oksA7D1IY=&apos;, &apos;response&apos;: &apos;json&apos;}
+test_01_list_sec_storage_vm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listZones=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;name=zone-xen&amp;command=listZones&amp;signature=8qPnSUoJUrNqS38TS5oksA7D1IY%3D&amp;response=json HTTP/1.1&quot; 200 412
+test_01_list_sec_storage_vm (test_ssvm.TestSSVMs): DEBUG: Response : [{localstorageenabled : False, name : u&apos;zone-xen&apos;, guestcidraddress : u&apos;10.1.1.0/24&apos;, tags : [], zonetoken : u&apos;b05d656d-b177-39ab-aea1-33ba9789da41&apos;, dns2 : u&apos;&apos;, dns1 : u&apos;8.8.8.8&apos;, securitygroupsenabled : False, allocationstate : u&apos;Enabled&apos;, internaldns1 : u&apos;8.8.8.8&apos;, dhcpprovider : u&apos;VirtualRouter&apos;, networktype : u&apos;Advanced&apos;, id : u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, internaldns2 : u&apos;&apos;}]
+test_01_list_sec_storage_vm (test_ssvm.TestSSVMs): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;state&apos;: &apos;Running&apos;, &apos;command&apos;: &apos;listSystemVms&apos;, &apos;signature&apos;: &apos;SWWSuVJyUrFcdZ6PKWezD+NGHWY=&apos;, &apos;systemvmtype&apos;: &apos;secondarystoragevm&apos;, &apos;response&apos;: &apos;json&apos;}
+test_01_list_sec_storage_vm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listSystemVms=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;state=Running&amp;command=listSystemVms&amp;signature=SWWSuVJyUrFcdZ6PKWezD%2BNGHWY%3D&amp;systemvmtype=secondarystoragevm&amp;response=json HTTP/1.1&quot; 200 28
+test_01_list_sec_storage_vm (test_ssvm.TestSSVMs): DEBUG: Response : None
+test_01_list_sec_storage_vm (test_ssvm.TestSSVMs): CRITICAL: FAILED: test_01_list_sec_storage_vm: [&apos;Traceback (most recent call last):\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run\n    testMethod()\n&apos;, &apos;  File &quot;/root/smoke/test_ssvm.py&quot;, line 125, in test_01_list_sec_storage_vm\n    &quot;Check list response returns a valid list&quot;\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual\n    assertion_func(first, second, msg=msg)\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual\n    raise self.failureException(msg)\n&apos;, &apos;AssertionError: Check list response returns a valid list\n&apos;]
+--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------</errorDetails>
+          <stdout>=== TestName: test_01_list_sec_storage_vm | Status : FAILED ===
+
+</stdout>
+          <failedSince>62</failedSince>
+        </case>
+        <case>
+          <duration>0.251</duration>
+          <className>test_ssvm.TestSSVMs</className>
+          <testName>test_02_list_cpvm_vm</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run
+    testMethod()
+  File &quot;/root/smoke/test_ssvm.py&quot;, line 263, in test_02_list_cpvm_vm
+    &quot;Check list response returns a valid list&quot;
+  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual
+    raise self.failureException(msg)
+&apos;Check list response returns a valid list\n-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------\n=== TestName: test_02_list_cpvm_vm | Status : FAILED ===\n\n\n--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\ntest_02_list_cpvm_vm (test_ssvm.TestSSVMs): DEBUG: ::::::::::::STARTED : TC: test_02_list_cpvm_vm :::::::::::\ntest_02_list_cpvm_vm (test_ssvm.TestSSVMs): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;name\&apos;: \&apos;zone-xen\&apos;, \&apos;command\&apos;: \&apos;listZones\&apos;, \&apos;signature\&apos;: \&apos;8qPnSUoJUrNqS38TS5oksA7D1IY=\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_02_list_cpvm_vm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listZones=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;name=zone-xen&amp;command=listZones&amp;signature=8qPnSUoJUrNqS38TS5oksA7D1IY%3D&amp;response=json HTTP/1.1&quot; 200 412\ntest_02_list_cpvm_vm (test_ssvm.TestSSVMs): DEBUG: Response : [{localstorageenabled : False, name : u\&apos;zone-xen\&apos;, guestcidraddress : u\&apos;10.1.1.0/24\&apos;, tags : [], zonetoken : u\&apos;b05d656d-b177-39ab-aea1-33ba9789da41\&apos;, dns2 : u\&apos;\&apos;, dns1 : u\&apos;8.8.8.8\&apos;, securitygroupsenabled : False, allocationstate : u\&apos;Enabled\&apos;, internaldns1 : u\&apos;8.8.8.8\&apos;, dhcpprovider : u\&apos;VirtualRouter\&apos;, networktype : u\&apos;Advanced\&apos;, id : u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, internaldns2 : u\&apos;\&apos;}]\ntest_02_list_cpvm_vm (test_ssvm.TestSSVMs): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;state\&apos;: \&apos;Running\&apos;, \&apos;command\&apos;: \&apos;listSystemVms\&apos;, \&apos;signature\&apos;: \&apos;axv0/EiLkuK0k5rOHLZyevNMadk=\&apos;, \&apos;systemvmtype\&apos;: \&apos;consoleproxy\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_02_list_cpvm_vm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listSystemVms=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;state=Running&amp;command=listSystemVms&amp;signature=axv0%2FEiLkuK0k5rOHLZyevNMadk%3D&amp;systemvmtype=consoleproxy&amp;response=json HTTP/1.1&quot; 200 28\ntest_02_list_cpvm_vm (test_ssvm.TestSSVMs): DEBUG: Response : None\ntest_02_list_cpvm_vm (test_ssvm.TestSSVMs): CRITICAL: FAILED: test_02_list_cpvm_vm: [\&apos;Traceback (most recent call last):\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run\\n    testMethod()\\n\&apos;, \&apos;  File &quot;/root/smoke/test_ssvm.py&quot;, line 263, in test_02_list_cpvm_vm\\n    &quot;Check list response returns a valid list&quot;\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual\\n    assertion_func(first, second, msg=msg)\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual\\n    raise self.failureException(msg)\\n\&apos;, \&apos;AssertionError: Check list response returns a valid list\\n\&apos;]\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&apos;</errorStackTrace>
+          <errorDetails>Check list response returns a valid list
+-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------
+=== TestName: test_02_list_cpvm_vm | Status : FAILED ===
+
+
+--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------
+-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------
+test_02_list_cpvm_vm (test_ssvm.TestSSVMs): DEBUG: ::::::::::::STARTED : TC: test_02_list_cpvm_vm :::::::::::
+test_02_list_cpvm_vm (test_ssvm.TestSSVMs): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;name&apos;: &apos;zone-xen&apos;, &apos;command&apos;: &apos;listZones&apos;, &apos;signature&apos;: &apos;8qPnSUoJUrNqS38TS5oksA7D1IY=&apos;, &apos;response&apos;: &apos;json&apos;}
+test_02_list_cpvm_vm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listZones=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;name=zone-xen&amp;command=listZones&amp;signature=8qPnSUoJUrNqS38TS5oksA7D1IY%3D&amp;response=json HTTP/1.1&quot; 200 412
+test_02_list_cpvm_vm (test_ssvm.TestSSVMs): DEBUG: Response : [{localstorageenabled : False, name : u&apos;zone-xen&apos;, guestcidraddress : u&apos;10.1.1.0/24&apos;, tags : [], zonetoken : u&apos;b05d656d-b177-39ab-aea1-33ba9789da41&apos;, dns2 : u&apos;&apos;, dns1 : u&apos;8.8.8.8&apos;, securitygroupsenabled : False, allocationstate : u&apos;Enabled&apos;, internaldns1 : u&apos;8.8.8.8&apos;, dhcpprovider : u&apos;VirtualRouter&apos;, networktype : u&apos;Advanced&apos;, id : u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, internaldns2 : u&apos;&apos;}]
+test_02_list_cpvm_vm (test_ssvm.TestSSVMs): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;state&apos;: &apos;Running&apos;, &apos;command&apos;: &apos;listSystemVms&apos;, &apos;signature&apos;: &apos;axv0/EiLkuK0k5rOHLZyevNMadk=&apos;, &apos;systemvmtype&apos;: &apos;consoleproxy&apos;, &apos;response&apos;: &apos;json&apos;}
+test_02_list_cpvm_vm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listSystemVms=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;state=Running&amp;command=listSystemVms&amp;signature=axv0%2FEiLkuK0k5rOHLZyevNMadk%3D&amp;systemvmtype=consoleproxy&amp;response=json HTTP/1.1&quot; 200 28
+test_02_list_cpvm_vm (test_ssvm.TestSSVMs): DEBUG: Response : None
+test_02_list_cpvm_vm (test_ssvm.TestSSVMs): CRITICAL: FAILED: test_02_list_cpvm_vm: [&apos;Traceback (most recent call last):\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run\n    testMethod()\n&apos;, &apos;  File &quot;/root/smoke/test_ssvm.py&quot;, line 263, in test_02_list_cpvm_vm\n    &quot;Check list response returns a valid list&quot;\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual\n    assertion_func(first, second, msg=msg)\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual\n    raise self.failureException(msg)\n&apos;, &apos;AssertionError: Check list response returns a valid list\n&apos;]
+--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------</errorDetails>
+          <stdout>=== TestName: test_02_list_cpvm_vm | Status : FAILED ===
+
+</stdout>
+          <failedSince>62</failedSince>
+        </case>
+        <case>
+          <duration>0.287</duration>
+          <className>test_ssvm.TestSSVMs</className>
+          <testName>test_03_ssvm_internals</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run
+    testMethod()
+  File &quot;/root/smoke/test_ssvm.py&quot;, line 394, in test_03_ssvm_internals
+    &quot;Check list response returns a valid list&quot;
+  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual
+    raise self.failureException(msg)
+&apos;Check list response returns a valid list\n-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------\n=== TestName: test_03_ssvm_internals | Status : FAILED ===\n\n\n--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\ntest_03_ssvm_internals (test_ssvm.TestSSVMs): DEBUG: ::::::::::::STARTED : TC: test_03_ssvm_internals :::::::::::\ntest_03_ssvm_internals (test_ssvm.TestSSVMs): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;name\&apos;: \&apos;zone-xen\&apos;, \&apos;command\&apos;: \&apos;listZones\&apos;, \&apos;signature\&apos;: \&apos;8qPnSUoJUrNqS38TS5oksA7D1IY=\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_03_ssvm_internals (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listZones=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;name=zone-xen&amp;command=listZones&amp;signature=8qPnSUoJUrNqS38TS5oksA7D1IY%3D&amp;response=json HTTP/1.1&quot; 200 412\ntest_03_ssvm_internals (test_ssvm.TestSSVMs): DEBUG: Response : [{localstorageenabled : False, name : u\&apos;zone-xen\&apos;, guestcidraddress : u\&apos;10.1.1.0/24\&apos;, tags : [], zonetoken : u\&apos;b05d656d-b177-39ab-aea1-33ba9789da41\&apos;, dns2 : u\&apos;\&apos;, dns1 : u\&apos;8.8.8.8\&apos;, securitygroupsenabled : False, allocationstate : u\&apos;Enabled\&apos;, internaldns1 : u\&apos;8.8.8.8\&apos;, dhcpprovider : u\&apos;VirtualRouter\&apos;, networktype : u\&apos;Advanced\&apos;, id : u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, internaldns2 : u\&apos;\&apos;}]\ntest_03_ssvm_internals (test_ssvm.TestSSVMs): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;state\&apos;: \&apos;Running\&apos;, \&apos;command\&apos;: \&apos;listSystemVms\&apos;, \&apos;signature\&apos;: \&apos;AF4uydaJwv2ueQ5UgjsN8u3V8Ro=\&apos;, \&apos;zoneid\&apos;: u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, \&apos;systemvmtype\&apos;: \&apos;secondarystoragevm\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_03_ssvm_internals (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listSystemVms=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;state=Running&amp;command=listSystemVms&amp;signature=AF4uydaJwv2ueQ5UgjsN8u3V8Ro%3D&amp;zoneid=e7f6e038-54ed-44fa-89ba-566a1c5d38bd&amp;systemvmtype=secondarystoragevm&amp;response=json HTTP/1.1&quot; 200 28\ntest_03_ssvm_internals (test_ssvm.TestSSVMs): DEBUG: Response : None\ntest_03_ssvm_internals (test_ssvm.TestSSVMs): CRITICAL: FAILED: test_03_ssvm_internals: [\&apos;Traceback (most recent call last):\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run\\n    testMethod()\\n\&apos;, \&apos;  File &quot;/root/smoke/test_ssvm.py&quot;, line 394, in test_03_ssvm_internals\\n    &quot;Check list response returns a valid list&quot;\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual\\n    assertion_func(first, second, msg=msg)\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual\\n    raise self.failureException(msg)\\n\&apos;, \&apos;AssertionError: Check list response returns a valid list\\n\&apos;]\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&apos;</errorStackTrace>
+          <errorDetails>Check list response returns a valid list
+-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------
+=== TestName: test_03_ssvm_internals | Status : FAILED ===
+
+
+--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------
+-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------
+test_03_ssvm_internals (test_ssvm.TestSSVMs): DEBUG: ::::::::::::STARTED : TC: test_03_ssvm_internals :::::::::::
+test_03_ssvm_internals (test_ssvm.TestSSVMs): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;name&apos;: &apos;zone-xen&apos;, &apos;command&apos;: &apos;listZones&apos;, &apos;signature&apos;: &apos;8qPnSUoJUrNqS38TS5oksA7D1IY=&apos;, &apos;response&apos;: &apos;json&apos;}
+test_03_ssvm_internals (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listZones=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;name=zone-xen&amp;command=listZones&amp;signature=8qPnSUoJUrNqS38TS5oksA7D1IY%3D&amp;response=json HTTP/1.1&quot; 200 412
+test_03_ssvm_internals (test_ssvm.TestSSVMs): DEBUG: Response : [{localstorageenabled : False, name : u&apos;zone-xen&apos;, guestcidraddress : u&apos;10.1.1.0/24&apos;, tags : [], zonetoken : u&apos;b05d656d-b177-39ab-aea1-33ba9789da41&apos;, dns2 : u&apos;&apos;, dns1 : u&apos;8.8.8.8&apos;, securitygroupsenabled : False, allocationstate : u&apos;Enabled&apos;, internaldns1 : u&apos;8.8.8.8&apos;, dhcpprovider : u&apos;VirtualRouter&apos;, networktype : u&apos;Advanced&apos;, id : u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, internaldns2 : u&apos;&apos;}]
+test_03_ssvm_internals (test_ssvm.TestSSVMs): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;state&apos;: &apos;Running&apos;, &apos;command&apos;: &apos;listSystemVms&apos;, &apos;signature&apos;: &apos;AF4uydaJwv2ueQ5UgjsN8u3V8Ro=&apos;, &apos;zoneid&apos;: u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, &apos;systemvmtype&apos;: &apos;secondarystoragevm&apos;, &apos;response&apos;: &apos;json&apos;}
+test_03_ssvm_internals (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listSystemVms=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;state=Running&amp;command=listSystemVms&amp;signature=AF4uydaJwv2ueQ5UgjsN8u3V8Ro%3D&amp;zoneid=e7f6e038-54ed-44fa-89ba-566a1c5d38bd&amp;systemvmtype=secondarystoragevm&amp;response=json HTTP/1.1&quot; 200 28
+test_03_ssvm_internals (test_ssvm.TestSSVMs): DEBUG: Response : None
+test_03_ssvm_internals (test_ssvm.TestSSVMs): CRITICAL: FAILED: test_03_ssvm_internals: [&apos;Traceback (most recent call last):\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run\n    testMethod()\n&apos;, &apos;  File &quot;/root/smoke/test_ssvm.py&quot;, line 394, in test_03_ssvm_internals\n    &quot;Check list response returns a valid list&quot;\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual\n    assertion_func(first, second, msg=msg)\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual\n    raise self.failureException(msg)\n&apos;, &apos;AssertionError: Check list response returns a valid list\n&apos;]
+--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------</errorDetails>
+          <stdout>=== TestName: test_03_ssvm_internals | Status : FAILED ===
+
+</stdout>
+          <failedSince>62</failedSince>
+        </case>
+        <case>
+          <duration>0.22</duration>
+          <className>test_ssvm.TestSSVMs</className>
+          <testName>test_04_cpvm_internals</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run
+    testMethod()
+  File &quot;/root/smoke/test_ssvm.py&quot;, line 559, in test_04_cpvm_internals
+    &quot;Check list response returns a valid list&quot;
+  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual
+    raise self.failureException(msg)
+&apos;Check list response returns a valid list\n-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------\n=== TestName: test_04_cpvm_internals | Status : FAILED ===\n\n\n--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\ntest_04_cpvm_internals (test_ssvm.TestSSVMs): DEBUG: ::::::::::::STARTED : TC: test_04_cpvm_internals :::::::::::\ntest_04_cpvm_internals (test_ssvm.TestSSVMs): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;name\&apos;: \&apos;zone-xen\&apos;, \&apos;command\&apos;: \&apos;listZones\&apos;, \&apos;signature\&apos;: \&apos;8qPnSUoJUrNqS38TS5oksA7D1IY=\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_04_cpvm_internals (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listZones=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;name=zone-xen&amp;command=listZones&amp;signature=8qPnSUoJUrNqS38TS5oksA7D1IY%3D&amp;response=json HTTP/1.1&quot; 200 412\ntest_04_cpvm_internals (test_ssvm.TestSSVMs): DEBUG: Response : [{localstorageenabled : False, name : u\&apos;zone-xen\&apos;, guestcidraddress : u\&apos;10.1.1.0/24\&apos;, tags : [], zonetoken : u\&apos;b05d656d-b177-39ab-aea1-33ba9789da41\&apos;, dns2 : u\&apos;\&apos;, dns1 : u\&apos;8.8.8.8\&apos;, securitygroupsenabled : False, allocationstate : u\&apos;Enabled\&apos;, internaldns1 : u\&apos;8.8.8.8\&apos;, dhcpprovider : u\&apos;VirtualRouter\&apos;, networktype : u\&apos;Advanced\&apos;, id : u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, internaldns2 : u\&apos;\&apos;}]\ntest_04_cpvm_internals (test_ssvm.TestSSVMs): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;state\&apos;: \&apos;Running\&apos;, \&apos;command\&apos;: \&apos;listSystemVms\&apos;, \&apos;signature\&apos;: \&apos;m88LFVXlX+luL4wnkkRBI4tOsrc=\&apos;, \&apos;zoneid\&apos;: u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, \&apos;systemvmtype\&apos;: \&apos;consoleproxy\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_04_cpvm_internals (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listSystemVms=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;state=Running&amp;command=listSystemVms&amp;signature=m88LFVXlX%2BluL4wnkkRBI4tOsrc%3D&amp;zoneid=e7f6e038-54ed-44fa-89ba-566a1c5d38bd&amp;systemvmtype=consoleproxy&amp;response=json HTTP/1.1&quot; 200 28\ntest_04_cpvm_internals (test_ssvm.TestSSVMs): DEBUG: Response : None\ntest_04_cpvm_internals (test_ssvm.TestSSVMs): CRITICAL: FAILED: test_04_cpvm_internals: [\&apos;Traceback (most recent call last):\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run\\n    testMethod()\\n\&apos;, \&apos;  File &quot;/root/smoke/test_ssvm.py&quot;, line 559, in test_04_cpvm_internals\\n    &quot;Check list response returns a valid list&quot;\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual\\n    assertion_func(first, second, msg=msg)\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual\\n    raise self.failureException(msg)\\n\&apos;, \&apos;AssertionError: Check list response returns a valid list\\n\&apos;]\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&apos;</errorStackTrace>
+          <errorDetails>Check list response returns a valid list
+-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------
+=== TestName: test_04_cpvm_internals | Status : FAILED ===
+
+
+--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------
+-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------
+test_04_cpvm_internals (test_ssvm.TestSSVMs): DEBUG: ::::::::::::STARTED : TC: test_04_cpvm_internals :::::::::::
+test_04_cpvm_internals (test_ssvm.TestSSVMs): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;name&apos;: &apos;zone-xen&apos;, &apos;command&apos;: &apos;listZones&apos;, &apos;signature&apos;: &apos;8qPnSUoJUrNqS38TS5oksA7D1IY=&apos;, &apos;response&apos;: &apos;json&apos;}
+test_04_cpvm_internals (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listZones=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;name=zone-xen&amp;command=listZones&amp;signature=8qPnSUoJUrNqS38TS5oksA7D1IY%3D&amp;response=json HTTP/1.1&quot; 200 412
+test_04_cpvm_internals (test_ssvm.TestSSVMs): DEBUG: Response : [{localstorageenabled : False, name : u&apos;zone-xen&apos;, guestcidraddress : u&apos;10.1.1.0/24&apos;, tags : [], zonetoken : u&apos;b05d656d-b177-39ab-aea1-33ba9789da41&apos;, dns2 : u&apos;&apos;, dns1 : u&apos;8.8.8.8&apos;, securitygroupsenabled : False, allocationstate : u&apos;Enabled&apos;, internaldns1 : u&apos;8.8.8.8&apos;, dhcpprovider : u&apos;VirtualRouter&apos;, networktype : u&apos;Advanced&apos;, id : u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, internaldns2 : u&apos;&apos;}]
+test_04_cpvm_internals (test_ssvm.TestSSVMs): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;state&apos;: &apos;Running&apos;, &apos;command&apos;: &apos;listSystemVms&apos;, &apos;signature&apos;: &apos;m88LFVXlX+luL4wnkkRBI4tOsrc=&apos;, &apos;zoneid&apos;: u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, &apos;systemvmtype&apos;: &apos;consoleproxy&apos;, &apos;response&apos;: &apos;json&apos;}
+test_04_cpvm_internals (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listSystemVms=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;state=Running&amp;command=listSystemVms&amp;signature=m88LFVXlX%2BluL4wnkkRBI4tOsrc%3D&amp;zoneid=e7f6e038-54ed-44fa-89ba-566a1c5d38bd&amp;systemvmtype=consoleproxy&amp;response=json HTTP/1.1&quot; 200 28
+test_04_cpvm_internals (test_ssvm.TestSSVMs): DEBUG: Response : None
+test_04_cpvm_internals (test_ssvm.TestSSVMs): CRITICAL: FAILED: test_04_cpvm_internals: [&apos;Traceback (most recent call last):\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run\n    testMethod()\n&apos;, &apos;  File &quot;/root/smoke/test_ssvm.py&quot;, line 559, in test_04_cpvm_internals\n    &quot;Check list response returns a valid list&quot;\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual\n    assertion_func(first, second, msg=msg)\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual\n    raise self.failureException(msg)\n&apos;, &apos;AssertionError: Check list response returns a valid list\n&apos;]
+--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------</errorDetails>
+          <stdout>=== TestName: test_04_cpvm_internals | Status : FAILED ===
+
+</stdout>
+          <failedSince>62</failedSince>
+        </case>
+        <case>
+          <duration>0.181</duration>
+          <className>test_ssvm.TestSSVMs</className>
+          <testName>test_05_stop_ssvm</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run
+    testMethod()
+  File &quot;/root/smoke/test_ssvm.py&quot;, line 695, in test_05_stop_ssvm
+    &quot;Check list response returns a valid list&quot;
+  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual
+    raise self.failureException(msg)
+&apos;Check list response returns a valid list\n-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------\n=== TestName: test_05_stop_ssvm | Status : FAILED ===\n\n\n--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\ntest_05_stop_ssvm (test_ssvm.TestSSVMs): DEBUG: ::::::::::::STARTED : TC: test_05_stop_ssvm :::::::::::\ntest_05_stop_ssvm (test_ssvm.TestSSVMs): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;name\&apos;: \&apos;zone-xen\&apos;, \&apos;command\&apos;: \&apos;listZones\&apos;, \&apos;signature\&apos;: \&apos;8qPnSUoJUrNqS38TS5oksA7D1IY=\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_05_stop_ssvm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listZones=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;name=zone-xen&amp;command=listZones&amp;signature=8qPnSUoJUrNqS38TS5oksA7D1IY%3D&amp;response=json HTTP/1.1&quot; 200 412\ntest_05_stop_ssvm (test_ssvm.TestSSVMs): DEBUG: Response : [{localstorageenabled : False, name : u\&apos;zone-xen\&apos;, guestcidraddress : u\&apos;10.1.1.0/24\&apos;, tags : [], zonetoken : u\&apos;b05d656d-b177-39ab-aea1-33ba9789da41\&apos;, dns2 : u\&apos;\&apos;, dns1 : u\&apos;8.8.8.8\&apos;, securitygroupsenabled : False, allocationstate : u\&apos;Enabled\&apos;, internaldns1 : u\&apos;8.8.8.8\&apos;, dhcpprovider : u\&apos;VirtualRouter\&apos;, networktype : u\&apos;Advanced\&apos;, id : u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, internaldns2 : u\&apos;\&apos;}]\ntest_05_stop_ssvm (test_ssvm.TestSSVMs): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;state\&apos;: \&apos;Running\&apos;, \&apos;command\&apos;: \&apos;listSystemVms\&apos;, \&apos;signature\&apos;: \&apos;AF4uydaJwv2ueQ5UgjsN8u3V8Ro=\&apos;, \&apos;zoneid\&apos;: u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, \&apos;systemvmtype\&apos;: \&apos;secondarystoragevm\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_05_stop_ssvm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listSystemVms=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;state=Running&amp;command=listSystemVms&amp;signature=AF4uydaJwv2ueQ5UgjsN8u3V8Ro%3D&amp;zoneid=e7f6e038-54ed-44fa-89ba-566a1c5d38bd&amp;systemvmtype=secondarystoragevm&amp;response=json HTTP/1.1&quot; 200 28\ntest_05_stop_ssvm (test_ssvm.TestSSVMs): DEBUG: Response : None\ntest_05_stop_ssvm (test_ssvm.TestSSVMs): CRITICAL: FAILED: test_05_stop_ssvm: [\&apos;Traceback (most recent call last):\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run\\n    testMethod()\\n\&apos;, \&apos;  File &quot;/root/smoke/test_ssvm.py&quot;, line 695, in test_05_stop_ssvm\\n    &quot;Check list response returns a valid list&quot;\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual\\n    assertion_func(first, second, msg=msg)\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual\\n    raise self.failureException(msg)\\n\&apos;, \&apos;AssertionError: Check list response returns a valid list\\n\&apos;]\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&apos;</errorStackTrace>
+          <errorDetails>Check list response returns a valid list
+-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------
+=== TestName: test_05_stop_ssvm | Status : FAILED ===
+
+
+--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------
+-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------
+test_05_stop_ssvm (test_ssvm.TestSSVMs): DEBUG: ::::::::::::STARTED : TC: test_05_stop_ssvm :::::::::::
+test_05_stop_ssvm (test_ssvm.TestSSVMs): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;name&apos;: &apos;zone-xen&apos;, &apos;command&apos;: &apos;listZones&apos;, &apos;signature&apos;: &apos;8qPnSUoJUrNqS38TS5oksA7D1IY=&apos;, &apos;response&apos;: &apos;json&apos;}
+test_05_stop_ssvm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listZones=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;name=zone-xen&amp;command=listZones&amp;signature=8qPnSUoJUrNqS38TS5oksA7D1IY%3D&amp;response=json HTTP/1.1&quot; 200 412
+test_05_stop_ssvm (test_ssvm.TestSSVMs): DEBUG: Response : [{localstorageenabled : False, name : u&apos;zone-xen&apos;, guestcidraddress : u&apos;10.1.1.0/24&apos;, tags : [], zonetoken : u&apos;b05d656d-b177-39ab-aea1-33ba9789da41&apos;, dns2 : u&apos;&apos;, dns1 : u&apos;8.8.8.8&apos;, securitygroupsenabled : False, allocationstate : u&apos;Enabled&apos;, internaldns1 : u&apos;8.8.8.8&apos;, dhcpprovider : u&apos;VirtualRouter&apos;, networktype : u&apos;Advanced&apos;, id : u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, internaldns2 : u&apos;&apos;}]
+test_05_stop_ssvm (test_ssvm.TestSSVMs): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;state&apos;: &apos;Running&apos;, &apos;command&apos;: &apos;listSystemVms&apos;, &apos;signature&apos;: &apos;AF4uydaJwv2ueQ5UgjsN8u3V8Ro=&apos;, &apos;zoneid&apos;: u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, &apos;systemvmtype&apos;: &apos;secondarystoragevm&apos;, &apos;response&apos;: &apos;json&apos;}
+test_05_stop_ssvm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listSystemVms=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;state=Running&amp;command=listSystemVms&amp;signature=AF4uydaJwv2ueQ5UgjsN8u3V8Ro%3D&amp;zoneid=e7f6e038-54ed-44fa-89ba-566a1c5d38bd&amp;systemvmtype=secondarystoragevm&amp;response=json HTTP/1.1&quot; 200 28
+test_05_stop_ssvm (test_ssvm.TestSSVMs): DEBUG: Response : None
+test_05_stop_ssvm (test_ssvm.TestSSVMs): CRITICAL: FAILED: test_05_stop_ssvm: [&apos;Traceback (most recent call last):\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run\n    testMethod()\n&apos;, &apos;  File &quot;/root/smoke/test_ssvm.py&quot;, line 695, in test_05_stop_ssvm\n    &quot;Check list response returns a valid list&quot;\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual\n    assertion_func(first, second, msg=msg)\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual\n    raise self.failureException(msg)\n&apos;, &apos;AssertionError: Check list response returns a valid list\n&apos;]
+--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------</errorDetails>
+          <stdout>=== TestName: test_05_stop_ssvm | Status : FAILED ===
+
+</stdout>
+          <failedSince>62</failedSince>
+        </case>
+        <case>
+          <duration>0.227</duration>
+          <className>test_ssvm.TestSSVMs</className>
+          <testName>test_06_stop_cpvm</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run
+    testMethod()
+  File &quot;/root/smoke/test_ssvm.py&quot;, line 782, in test_06_stop_cpvm
+    &quot;Check list response returns a valid list&quot;
+  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual
+    raise self.failureException(msg)
+&apos;Check list response returns a valid list\n-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------\n=== TestName: test_06_stop_cpvm | Status : FAILED ===\n\n\n--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\ntest_06_stop_cpvm (test_ssvm.TestSSVMs): DEBUG: ::::::::::::STARTED : TC: test_06_stop_cpvm :::::::::::\ntest_06_stop_cpvm (test_ssvm.TestSSVMs): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;name\&apos;: \&apos;zone-xen\&apos;, \&apos;command\&apos;: \&apos;listZones\&apos;, \&apos;signature\&apos;: \&apos;8qPnSUoJUrNqS38TS5oksA7D1IY=\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_06_stop_cpvm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listZones=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;name=zone-xen&amp;command=listZones&amp;signature=8qPnSUoJUrNqS38TS5oksA7D1IY%3D&amp;response=json HTTP/1.1&quot; 200 412\ntest_06_stop_cpvm (test_ssvm.TestSSVMs): DEBUG: Response : [{localstorageenabled : False, name : u\&apos;zone-xen\&apos;, guestcidraddress : u\&apos;10.1.1.0/24\&apos;, tags : [], zonetoken : u\&apos;b05d656d-b177-39ab-aea1-33ba9789da41\&apos;, dns2 : u\&apos;\&apos;, dns1 : u\&apos;8.8.8.8\&apos;, securitygroupsenabled : False, allocationstate : u\&apos;Enabled\&apos;, internaldns1 : u\&apos;8.8.8.8\&apos;, dhcpprovider : u\&apos;VirtualRouter\&apos;, networktype : u\&apos;Advanced\&apos;, id : u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, internaldns2 : u\&apos;\&apos;}]\ntest_06_stop_cpvm (test_ssvm.TestSSVMs): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;state\&apos;: \&apos;Running\&apos;, \&apos;command\&apos;: \&apos;listSystemVms\&apos;, \&apos;signature\&apos;: \&apos;m88LFVXlX+luL4wnkkRBI4tOsrc=\&apos;, \&apos;zoneid\&apos;: u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, \&apos;systemvmtype\&apos;: \&apos;consoleproxy\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_06_stop_cpvm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listSystemVms=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;state=Running&amp;command=listSystemVms&amp;signature=m88LFVXlX%2BluL4wnkkRBI4tOsrc%3D&amp;zoneid=e7f6e038-54ed-44fa-89ba-566a1c5d38bd&amp;systemvmtype=consoleproxy&amp;response=json HTTP/1.1&quot; 200 28\ntest_06_stop_cpvm (test_ssvm.TestSSVMs): DEBUG: Response : None\ntest_06_stop_cpvm (test_ssvm.TestSSVMs): CRITICAL: FAILED: test_06_stop_cpvm: [\&apos;Traceback (most recent call last):\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run\\n    testMethod()\\n\&apos;, \&apos;  File &quot;/root/smoke/test_ssvm.py&quot;, line 782, in test_06_stop_cpvm\\n    &quot;Check list response returns a valid list&quot;\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual\\n    assertion_func(first, second, msg=msg)\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual\\n    raise self.failureException(msg)\\n\&apos;, \&apos;AssertionError: Check list response returns a valid list\\n\&apos;]\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&apos;</errorStackTrace>
+          <errorDetails>Check list response returns a valid list
+-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------
+=== TestName: test_06_stop_cpvm | Status : FAILED ===
+
+
+--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------
+-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------
+test_06_stop_cpvm (test_ssvm.TestSSVMs): DEBUG: ::::::::::::STARTED : TC: test_06_stop_cpvm :::::::::::
+test_06_stop_cpvm (test_ssvm.TestSSVMs): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;name&apos;: &apos;zone-xen&apos;, &apos;command&apos;: &apos;listZones&apos;, &apos;signature&apos;: &apos;8qPnSUoJUrNqS38TS5oksA7D1IY=&apos;, &apos;response&apos;: &apos;json&apos;}
+test_06_stop_cpvm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listZones=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;name=zone-xen&amp;command=listZones&amp;signature=8qPnSUoJUrNqS38TS5oksA7D1IY%3D&amp;response=json HTTP/1.1&quot; 200 412
+test_06_stop_cpvm (test_ssvm.TestSSVMs): DEBUG: Response : [{localstorageenabled : False, name : u&apos;zone-xen&apos;, guestcidraddress : u&apos;10.1.1.0/24&apos;, tags : [], zonetoken : u&apos;b05d656d-b177-39ab-aea1-33ba9789da41&apos;, dns2 : u&apos;&apos;, dns1 : u&apos;8.8.8.8&apos;, securitygroupsenabled : False, allocationstate : u&apos;Enabled&apos;, internaldns1 : u&apos;8.8.8.8&apos;, dhcpprovider : u&apos;VirtualRouter&apos;, networktype : u&apos;Advanced&apos;, id : u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, internaldns2 : u&apos;&apos;}]
+test_06_stop_cpvm (test_ssvm.TestSSVMs): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;state&apos;: &apos;Running&apos;, &apos;command&apos;: &apos;listSystemVms&apos;, &apos;signature&apos;: &apos;m88LFVXlX+luL4wnkkRBI4tOsrc=&apos;, &apos;zoneid&apos;: u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, &apos;systemvmtype&apos;: &apos;consoleproxy&apos;, &apos;response&apos;: &apos;json&apos;}
+test_06_stop_cpvm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listSystemVms=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;state=Running&amp;command=listSystemVms&amp;signature=m88LFVXlX%2BluL4wnkkRBI4tOsrc%3D&amp;zoneid=e7f6e038-54ed-44fa-89ba-566a1c5d38bd&amp;systemvmtype=consoleproxy&amp;response=json HTTP/1.1&quot; 200 28
+test_06_stop_cpvm (test_ssvm.TestSSVMs): DEBUG: Response : None
+test_06_stop_cpvm (test_ssvm.TestSSVMs): CRITICAL: FAILED: test_06_stop_cpvm: [&apos;Traceback (most recent call last):\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run\n    testMethod()\n&apos;, &apos;  File &quot;/root/smoke/test_ssvm.py&quot;, line 782, in test_06_stop_cpvm\n    &quot;Check list response returns a valid list&quot;\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual\n    assertion_func(first, second, msg=msg)\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual\n    raise self.failureException(msg)\n&apos;, &apos;AssertionError: Check list response returns a valid list\n&apos;]
+--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------</errorDetails>
+          <stdout>=== TestName: test_06_stop_cpvm | Status : FAILED ===
+
+</stdout>
+          <failedSince>62</failedSince>
+        </case>
+        <case>
+          <duration>0.251</duration>
+          <className>test_ssvm.TestSSVMs</className>
+          <testName>test_07_reboot_ssvm</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run
+    testMethod()
+  File &quot;/root/smoke/test_ssvm.py&quot;, line 866, in test_07_reboot_ssvm
+    &quot;Check list response returns a valid list&quot;
+  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual
+    raise self.failureException(msg)
+&apos;Check list response returns a valid list\n-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------\n=== TestName: test_07_reboot_ssvm | Status : FAILED ===\n\n\n--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\ntest_07_reboot_ssvm (test_ssvm.TestSSVMs): DEBUG: ::::::::::::STARTED : TC: test_07_reboot_ssvm :::::::::::\ntest_07_reboot_ssvm (test_ssvm.TestSSVMs): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;name\&apos;: \&apos;zone-xen\&apos;, \&apos;command\&apos;: \&apos;listZones\&apos;, \&apos;signature\&apos;: \&apos;8qPnSUoJUrNqS38TS5oksA7D1IY=\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_07_reboot_ssvm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listZones=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;name=zone-xen&amp;command=listZones&amp;signature=8qPnSUoJUrNqS38TS5oksA7D1IY%3D&amp;response=json HTTP/1.1&quot; 200 412\ntest_07_reboot_ssvm (test_ssvm.TestSSVMs): DEBUG: Response : [{localstorageenabled : False, name : u\&apos;zone-xen\&apos;, guestcidraddress : u\&apos;10.1.1.0/24\&apos;, tags : [], zonetoken : u\&apos;b05d656d-b177-39ab-aea1-33ba9789da41\&apos;, dns2 : u\&apos;\&apos;, dns1 : u\&apos;8.8.8.8\&apos;, securitygroupsenabled : False, allocationstate : u\&apos;Enabled\&apos;, internaldns1 : u\&apos;8.8.8.8\&apos;, dhcpprovider : u\&apos;VirtualRouter\&apos;, networktype : u\&apos;Advanced\&apos;, id : u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, internaldns2 : u\&apos;\&apos;}]\ntest_07_reboot_ssvm (test_ssvm.TestSSVMs): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;state\&apos;: \&apos;Running\&apos;, \&apos;command\&apos;: \&apos;listSystemVms\&apos;, \&apos;signature\&apos;: \&apos;AF4uydaJwv2ueQ5UgjsN8u3V8Ro=\&apos;, \&apos;zoneid\&apos;: u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, \&apos;systemvmtype\&apos;: \&apos;secondarystoragevm\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_07_reboot_ssvm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listSystemVms=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;state=Running&amp;command=listSystemVms&amp;signature=AF4uydaJwv2ueQ5UgjsN8u3V8Ro%3D&amp;zoneid=e7f6e038-54ed-44fa-89ba-566a1c5d38bd&amp;systemvmtype=secondarystoragevm&amp;response=json HTTP/1.1&quot; 200 28\ntest_07_reboot_ssvm (test_ssvm.TestSSVMs): DEBUG: Response : None\ntest_07_reboot_ssvm (test_ssvm.TestSSVMs): CRITICAL: FAILED: test_07_reboot_ssvm: [\&apos;Traceback (most recent call last):\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run\\n    testMethod()\\n\&apos;, \&apos;  File &quot;/root/smoke/test_ssvm.py&quot;, line 866, in test_07_reboot_ssvm\\n    &quot;Check list response returns a valid list&quot;\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual\\n    assertion_func(first, second, msg=msg)\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual\\n    raise self.failureException(msg)\\n\&apos;, \&apos;AssertionError: Check list response returns a valid list\\n\&apos;]\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&apos;</errorStackTrace>
+          <errorDetails>Check list response returns a valid list
+-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------
+=== TestName: test_07_reboot_ssvm | Status : FAILED ===
+
+
+--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------
+-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------
+test_07_reboot_ssvm (test_ssvm.TestSSVMs): DEBUG: ::::::::::::STARTED : TC: test_07_reboot_ssvm :::::::::::
+test_07_reboot_ssvm (test_ssvm.TestSSVMs): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;name&apos;: &apos;zone-xen&apos;, &apos;command&apos;: &apos;listZones&apos;, &apos;signature&apos;: &apos;8qPnSUoJUrNqS38TS5oksA7D1IY=&apos;, &apos;response&apos;: &apos;json&apos;}
+test_07_reboot_ssvm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listZones=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;name=zone-xen&amp;command=listZones&amp;signature=8qPnSUoJUrNqS38TS5oksA7D1IY%3D&amp;response=json HTTP/1.1&quot; 200 412
+test_07_reboot_ssvm (test_ssvm.TestSSVMs): DEBUG: Response : [{localstorageenabled : False, name : u&apos;zone-xen&apos;, guestcidraddress : u&apos;10.1.1.0/24&apos;, tags : [], zonetoken : u&apos;b05d656d-b177-39ab-aea1-33ba9789da41&apos;, dns2 : u&apos;&apos;, dns1 : u&apos;8.8.8.8&apos;, securitygroupsenabled : False, allocationstate : u&apos;Enabled&apos;, internaldns1 : u&apos;8.8.8.8&apos;, dhcpprovider : u&apos;VirtualRouter&apos;, networktype : u&apos;Advanced&apos;, id : u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, internaldns2 : u&apos;&apos;}]
+test_07_reboot_ssvm (test_ssvm.TestSSVMs): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;state&apos;: &apos;Running&apos;, &apos;command&apos;: &apos;listSystemVms&apos;, &apos;signature&apos;: &apos;AF4uydaJwv2ueQ5UgjsN8u3V8Ro=&apos;, &apos;zoneid&apos;: u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, &apos;systemvmtype&apos;: &apos;secondarystoragevm&apos;, &apos;response&apos;: &apos;json&apos;}
+test_07_reboot_ssvm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listSystemVms=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;state=Running&amp;command=listSystemVms&amp;signature=AF4uydaJwv2ueQ5UgjsN8u3V8Ro%3D&amp;zoneid=e7f6e038-54ed-44fa-89ba-566a1c5d38bd&amp;systemvmtype=secondarystoragevm&amp;response=json HTTP/1.1&quot; 200 28
+test_07_reboot_ssvm (test_ssvm.TestSSVMs): DEBUG: Response : None
+test_07_reboot_ssvm (test_ssvm.TestSSVMs): CRITICAL: FAILED: test_07_reboot_ssvm: [&apos;Traceback (most recent call last):\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run\n    testMethod()\n&apos;, &apos;  File &quot;/root/smoke/test_ssvm.py&quot;, line 866, in test_07_reboot_ssvm\n    &quot;Check list response returns a valid list&quot;\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual\n    assertion_func(first, second, msg=msg)\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual\n    raise self.failureException(msg)\n&apos;, &apos;AssertionError: Check list response returns a valid list\n&apos;]
+--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------</errorDetails>
+          <stdout>=== TestName: test_07_reboot_ssvm | Status : FAILED ===
+
+</stdout>
+          <failedSince>62</failedSince>
+        </case>
+        <case>
+          <duration>0.272</duration>
+          <className>test_ssvm.TestSSVMs</className>
+          <testName>test_08_reboot_cpvm</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run
+    testMethod()
+  File &quot;/root/smoke/test_ssvm.py&quot;, line 958, in test_08_reboot_cpvm
+    &quot;Check list response returns a valid list&quot;
+  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual
+    raise self.failureException(msg)
+&apos;Check list response returns a valid list\n-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------\n=== TestName: test_08_reboot_cpvm | Status : FAILED ===\n\n\n--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\ntest_08_reboot_cpvm (test_ssvm.TestSSVMs): DEBUG: ::::::::::::STARTED : TC: test_08_reboot_cpvm :::::::::::\ntest_08_reboot_cpvm (test_ssvm.TestSSVMs): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;name\&apos;: \&apos;zone-xen\&apos;, \&apos;command\&apos;: \&apos;listZones\&apos;, \&apos;signature\&apos;: \&apos;8qPnSUoJUrNqS38TS5oksA7D1IY=\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_08_reboot_cpvm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listZones=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;name=zone-xen&amp;command=listZones&amp;signature=8qPnSUoJUrNqS38TS5oksA7D1IY%3D&amp;response=json HTTP/1.1&quot; 200 412\ntest_08_reboot_cpvm (test_ssvm.TestSSVMs): DEBUG: Response : [{localstorageenabled : False, name : u\&apos;zone-xen\&apos;, guestcidraddress : u\&apos;10.1.1.0/24\&apos;, tags : [], zonetoken : u\&apos;b05d656d-b177-39ab-aea1-33ba9789da41\&apos;, dns2 : u\&apos;\&apos;, dns1 : u\&apos;8.8.8.8\&apos;, securitygroupsenabled : False, allocationstate : u\&apos;Enabled\&apos;, internaldns1 : u\&apos;8.8.8.8\&apos;, dhcpprovider : u\&apos;VirtualRouter\&apos;, networktype : u\&apos;Advanced\&apos;, id : u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, internaldns2 : u\&apos;\&apos;}]\ntest_08_reboot_cpvm (test_ssvm.TestSSVMs): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;state\&apos;: \&apos;Running\&apos;, \&apos;command\&apos;: \&apos;listSystemVms\&apos;, \&apos;signature\&apos;: \&apos;m88LFVXlX+luL4wnkkRBI4tOsrc=\&apos;, \&apos;zoneid\&apos;: u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, \&apos;systemvmtype\&apos;: \&apos;consoleproxy\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_08_reboot_cpvm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listSystemVms=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;state=Running&amp;command=listSystemVms&amp;signature=m88LFVXlX%2BluL4wnkkRBI4tOsrc%3D&amp;zoneid=e7f6e038-54ed-44fa-89ba-566a1c5d38bd&amp;systemvmtype=consoleproxy&amp;response=json HTTP/1.1&quot; 200 28\ntest_08_reboot_cpvm (test_ssvm.TestSSVMs): DEBUG: Response : None\ntest_08_reboot_cpvm (test_ssvm.TestSSVMs): CRITICAL: FAILED: test_08_reboot_cpvm: [\&apos;Traceback (most recent call last):\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run\\n    testMethod()\\n\&apos;, \&apos;  File &quot;/root/smoke/test_ssvm.py&quot;, line 958, in test_08_reboot_cpvm\\n    &quot;Check list response returns a valid list&quot;\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual\\n    assertion_func(first, second, msg=msg)\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual\\n    raise self.failureException(msg)\\n\&apos;, \&apos;AssertionError: Check list response returns a valid list\\n\&apos;]\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&apos;</errorStackTrace>
+          <errorDetails>Check list response returns a valid list
+-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------
+=== TestName: test_08_reboot_cpvm | Status : FAILED ===
+
+
+--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------
+-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------
+test_08_reboot_cpvm (test_ssvm.TestSSVMs): DEBUG: ::::::::::::STARTED : TC: test_08_reboot_cpvm :::::::::::
+test_08_reboot_cpvm (test_ssvm.TestSSVMs): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;name&apos;: &apos;zone-xen&apos;, &apos;command&apos;: &apos;listZones&apos;, &apos;signature&apos;: &apos;8qPnSUoJUrNqS38TS5oksA7D1IY=&apos;, &apos;response&apos;: &apos;json&apos;}
+test_08_reboot_cpvm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listZones=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;name=zone-xen&amp;command=listZones&amp;signature=8qPnSUoJUrNqS38TS5oksA7D1IY%3D&amp;response=json HTTP/1.1&quot; 200 412
+test_08_reboot_cpvm (test_ssvm.TestSSVMs): DEBUG: Response : [{localstorageenabled : False, name : u&apos;zone-xen&apos;, guestcidraddress : u&apos;10.1.1.0/24&apos;, tags : [], zonetoken : u&apos;b05d656d-b177-39ab-aea1-33ba9789da41&apos;, dns2 : u&apos;&apos;, dns1 : u&apos;8.8.8.8&apos;, securitygroupsenabled : False, allocationstate : u&apos;Enabled&apos;, internaldns1 : u&apos;8.8.8.8&apos;, dhcpprovider : u&apos;VirtualRouter&apos;, networktype : u&apos;Advanced&apos;, id : u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, internaldns2 : u&apos;&apos;}]
+test_08_reboot_cpvm (test_ssvm.TestSSVMs): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;state&apos;: &apos;Running&apos;, &apos;command&apos;: &apos;listSystemVms&apos;, &apos;signature&apos;: &apos;m88LFVXlX+luL4wnkkRBI4tOsrc=&apos;, &apos;zoneid&apos;: u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, &apos;systemvmtype&apos;: &apos;consoleproxy&apos;, &apos;response&apos;: &apos;json&apos;}
+test_08_reboot_cpvm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listSystemVms=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;state=Running&amp;command=listSystemVms&amp;signature=m88LFVXlX%2BluL4wnkkRBI4tOsrc%3D&amp;zoneid=e7f6e038-54ed-44fa-89ba-566a1c5d38bd&amp;systemvmtype=consoleproxy&amp;response=json HTTP/1.1&quot; 200 28
+test_08_reboot_cpvm (test_ssvm.TestSSVMs): DEBUG: Response : None
+test_08_reboot_cpvm (test_ssvm.TestSSVMs): CRITICAL: FAILED: test_08_reboot_cpvm: [&apos;Traceback (most recent call last):\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run\n    testMethod()\n&apos;, &apos;  File &quot;/root/smoke/test_ssvm.py&quot;, line 958, in test_08_reboot_cpvm\n    &quot;Check list response returns a valid list&quot;\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual\n    assertion_func(first, second, msg=msg)\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual\n    raise self.failureException(msg)\n&apos;, &apos;AssertionError: Check list response returns a valid list\n&apos;]
+--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------</errorDetails>
+          <stdout>=== TestName: test_08_reboot_cpvm | Status : FAILED ===
+
+</stdout>
+          <failedSince>62</failedSince>
+        </case>
+        <case>
+          <duration>0.077</duration>
+          <className>test_ssvm.TestSSVMs</className>
+          <testName>test_09_destroy_ssvm</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run
+    testMethod()
+  File &quot;/root/smoke/test_ssvm.py&quot;, line 1053, in test_09_destroy_ssvm
+    &quot;Check list response returns a valid list&quot;
+  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual
+    raise self.failureException(msg)
+&apos;Check list response returns a valid list\n-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------\n=== TestName: test_09_destroy_ssvm | Status : FAILED ===\n\n\n--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------\n-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------\ntest_09_destroy_ssvm (test_ssvm.TestSSVMs): DEBUG: ::::::::::::STARTED : TC: test_09_destroy_ssvm :::::::::::\ntest_09_destroy_ssvm (test_ssvm.TestSSVMs): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;name\&apos;: \&apos;zone-xen\&apos;, \&apos;command\&apos;: \&apos;listZones\&apos;, \&apos;signature\&apos;: \&apos;8qPnSUoJUrNqS38TS5oksA7D1IY=\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_09_destroy_ssvm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listZones=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;name=zone-xen&amp;command=listZones&amp;signature=8qPnSUoJUrNqS38TS5oksA7D1IY%3D&amp;response=json HTTP/1.1&quot; 200 412\ntest_09_destroy_ssvm (test_ssvm.TestSSVMs): DEBUG: Response : [{localstorageenabled : False, name : u\&apos;zone-xen\&apos;, guestcidraddress : u\&apos;10.1.1.0/24\&apos;, tags : [], zonetoken : u\&apos;b05d656d-b177-39ab-aea1-33ba9789da41\&apos;, dns2 : u\&apos;\&apos;, dns1 : u\&apos;8.8.8.8\&apos;, securitygroupsenabled : False, allocationstate : u\&apos;Enabled\&apos;, internaldns1 : u\&apos;8.8.8.8\&apos;, dhcpprovider : u\&apos;VirtualRouter\&apos;, networktype : u\&apos;Advanced\&apos;, id : u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, internaldns2 : u\&apos;\&apos;}]\ntest_09_destroy_ssvm (test_ssvm.TestSSVMs): DEBUG: Payload: {\&apos;apiKey\&apos;: u\&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ\&apos;, \&apos;state\&apos;: \&apos;Running\&apos;, \&apos;command\&apos;: \&apos;listSystemVms\&apos;, \&apos;signature\&apos;: \&apos;AF4uydaJwv2ueQ5UgjsN8u3V8Ro=\&apos;, \&apos;zoneid\&apos;: u\&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd\&apos;, \&apos;systemvmtype\&apos;: \&apos;secondarystoragevm\&apos;, \&apos;response\&apos;: \&apos;json\&apos;}\ntest_09_destroy_ssvm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listSystemVms=======\nrequests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102\nrequests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;state=Running&amp;command=listSystemVms&amp;signature=AF4uydaJwv2ueQ5UgjsN8u3V8Ro%3D&amp;zoneid=e7f6e038-54ed-44fa-89ba-566a1c5d38bd&amp;systemvmtype=secondarystoragevm&amp;response=json HTTP/1.1&quot; 200 28\ntest_09_destroy_ssvm (test_ssvm.TestSSVMs): DEBUG: Response : None\ntest_09_destroy_ssvm (test_ssvm.TestSSVMs): CRITICAL: FAILED: test_09_destroy_ssvm: [\&apos;Traceback (most recent call last):\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run\\n    testMethod()\\n\&apos;, \&apos;  File &quot;/root/smoke/test_ssvm.py&quot;, line 1053, in test_09_destroy_ssvm\\n    &quot;Check list response returns a valid list&quot;\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual\\n    assertion_func(first, second, msg=msg)\\n\&apos;, \&apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual\\n    raise self.failureException(msg)\\n\&apos;, \&apos;AssertionError: Check list response returns a valid list\\n\&apos;]\n--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------&apos;</errorStackTrace>
+          <errorDetails>Check list response returns a valid list
+-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------
+=== TestName: test_09_destroy_ssvm | Status : FAILED ===
+
+
+--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------
+-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------
+test_09_destroy_ssvm (test_ssvm.TestSSVMs): DEBUG: ::::::::::::STARTED : TC: test_09_destroy_ssvm :::::::::::
+test_09_destroy_ssvm (test_ssvm.TestSSVMs): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;name&apos;: &apos;zone-xen&apos;, &apos;command&apos;: &apos;listZones&apos;, &apos;signature&apos;: &apos;8qPnSUoJUrNqS38TS5oksA7D1IY=&apos;, &apos;response&apos;: &apos;json&apos;}
+test_09_destroy_ssvm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listZones=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;name=zone-xen&amp;command=listZones&amp;signature=8qPnSUoJUrNqS38TS5oksA7D1IY%3D&amp;response=json HTTP/1.1&quot; 200 412
+test_09_destroy_ssvm (test_ssvm.TestSSVMs): DEBUG: Response : [{localstorageenabled : False, name : u&apos;zone-xen&apos;, guestcidraddress : u&apos;10.1.1.0/24&apos;, tags : [], zonetoken : u&apos;b05d656d-b177-39ab-aea1-33ba9789da41&apos;, dns2 : u&apos;&apos;, dns1 : u&apos;8.8.8.8&apos;, securitygroupsenabled : False, allocationstate : u&apos;Enabled&apos;, internaldns1 : u&apos;8.8.8.8&apos;, dhcpprovider : u&apos;VirtualRouter&apos;, networktype : u&apos;Advanced&apos;, id : u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, internaldns2 : u&apos;&apos;}]
+test_09_destroy_ssvm (test_ssvm.TestSSVMs): DEBUG: Payload: {&apos;apiKey&apos;: u&apos;aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&apos;, &apos;state&apos;: &apos;Running&apos;, &apos;command&apos;: &apos;listSystemVms&apos;, &apos;signature&apos;: &apos;AF4uydaJwv2ueQ5UgjsN8u3V8Ro=&apos;, &apos;zoneid&apos;: u&apos;e7f6e038-54ed-44fa-89ba-566a1c5d38bd&apos;, &apos;systemvmtype&apos;: &apos;secondarystoragevm&apos;, &apos;response&apos;: &apos;json&apos;}
+test_09_destroy_ssvm (test_ssvm.TestSSVMs): DEBUG: ========Sending GET Cmd : listSystemVms=======
+requests.packages.urllib3.connectionpool: DEBUG: Starting new HTTP connection (1): 10.112.10.102
+requests.packages.urllib3.connectionpool: DEBUG: http://10.112.10.102:8080 &quot;GET /client/api?apiKey=aD4wyA6N0i_l44RS7dUflhPhrAtxqTqymljDN6C1xNpDB3LlpgdZmTpEa1_foSN57WJx9x3M_7ZuYNV2QYLjZQ&amp;state=Running&amp;command=listSystemVms&amp;signature=AF4uydaJwv2ueQ5UgjsN8u3V8Ro%3D&amp;zoneid=e7f6e038-54ed-44fa-89ba-566a1c5d38bd&amp;systemvmtype=secondarystoragevm&amp;response=json HTTP/1.1&quot; 200 28
+test_09_destroy_ssvm (test_ssvm.TestSSVMs): DEBUG: Response : None
+test_09_destroy_ssvm (test_ssvm.TestSSVMs): CRITICAL: FAILED: test_09_destroy_ssvm: [&apos;Traceback (most recent call last):\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 329, in run\n    testMethod()\n&apos;, &apos;  File &quot;/root/smoke/test_ssvm.py&quot;, line 1053, in test_09_destroy_ssvm\n    &quot;Check list response returns a valid list&quot;\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 513, in assertEqual\n    assertion_func(first, second, msg=msg)\n&apos;, &apos;  File &quot;/usr/local/lib/python2.7/unittest/case.py&quot;, line 506, in _baseAssertEqual\n    raise self.failureException(msg)\n&apos;, &apos;AssertionError: Check list response returns a valid list\n&apos;]
+--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------</errorDetails>
+          <stdout>=== TestName: test_09_destroy_ssvm | Status : FAILED ===
+
+</stdout>
+          <failedSince>62</failedSince>
+        </case>
+        <case>
+          <duration>604.827</duration>
+          <className>test_ssvm.TestSSVMs</className>
+          <testName>test_10_destroy_cpvm</testName>
+          <skipped>false</skipped>
+          <stderr>====Trying SSH Connection: Host:10.112.10.103 User:root                                   Port:22 RetryCnt:60===
+===SSH to Host 10.112.10.103 port : 22 SUCCESSFUL===
+{Cmd: ssh -i ~/.ssh/id_rsa.cloud -ostricthostkeychecking=no -oUserKnownHostsFile=/dev/null -p 3922 169.254.0.136 service cloud status via Host: 10.112.10.103} {returns: [u&apos;CloudStack cloud service (type=consoleproxy) is running: process id: 3599&apos;]}
+====Trying SSH Connection: Host:10.112.10.103 User:root                              
+...[truncated 293 chars]...
+eychecking=no -oUserKnownHostsFile=/dev/null -p 3922 169.254.0.136 cat /var/cache/cloud/cmdline | xargs | sed &quot;s/ /\n/g&quot; | grep eth0ip= | sed &quot;s/\=/ /g&quot; | awk &apos;{print $2}&apos; via Host: 10.112.10.103} {returns: [u&apos;169.254.0.136&apos;]}
+{Cmd: ssh -i ~/.ssh/id_rsa.cloud -ostricthostkeychecking=no -oUserKnownHostsFile=/dev/null -p 3922 169.254.0.136 cat /var/cache/cloud/cmdline | xargs | sed &quot;s/ /\n/g&quot; | grep eth0ip= | sed &quot;s/\=/ /g&quot; | awk &apos;{print $2}&apos; via Host: 10.112.10.103} {returns: [u&apos;169.254.0.136&apos;]}
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.047</duration>
+          <className>test_ssvm.TestSSVMs</className>
+          <testName>test_11_ss_nfs_version_on_ssvm</testName>
+          <skipped>true</skipped>
+          <skippedMessage>No NFS version provided in test data</skippedMessage>
+          <failedSince>62</failedSince>
+        </case>
+        <case>
+          <duration>134.439</duration>
+          <className>test_templates.TestCreateTemplate</className>
+          <testName>test_01_create_template</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>250.709</duration>
+          <className>test_templates.TestCreateTemplate</className>
+          <testName>test_CreateTemplateWithDuplicateName</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>90.252</duration>
+          <className>test_templates.TestTemplates</className>
+          <testName>test_02_edit_template</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>5.231</duration>
+          <className>test_templates.TestTemplates</className>
+          <testName>test_03_delete_template</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>5.309</duration>
+          <className>test_templates.TestTemplates</className>
+          <testName>test_04_extract_template</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.156</duration>
+          <className>test_templates.TestTemplates</className>
+          <testName>test_05_template_permissions</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.001</duration>
+          <className>test_templates.TestTemplates</className>
+          <testName>test_06_copy_template</testName>
+          <skipped>true</skipped>
+          <skippedMessage>Not enough zones available to perform copy template</skippedMessage>
+          <failedSince>66</failedSince>
+        </case>
+        <case>
+          <duration>0.064</duration>
+          <className>test_templates.TestTemplates</className>
+          <testName>test_07_list_public_templates</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.071</duration>
+          <className>test_templates.TestTemplates</className>
+          <testName>test_08_list_system_templates</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.049</duration>
+          <className>test_vm_life_cycle.TestDeployVM</className>
+          <testName>test_advZoneVirtualRouter</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.049</duration>
+          <className>test_vm_life_cycle.TestDeployVM</className>
+          <testName>test_deploy_vm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>215.244</duration>
+          <className>test_vm_life_cycle.TestDeployVM</className>
+          <testName>test_deploy_vm_multiple</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>15.357</duration>
+          <className>test_vm_life_cycle.TestVMLifeCycle</className>
+          <testName>test_01_stop_vm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>20.766</duration>
+          <className>test_vm_life_cycle.TestVMLifeCycle</className>
+          <testName>test_02_start_vm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>20.658</duration>
+          <className>test_vm_life_cycle.TestVMLifeCycle</className>
+          <testName>test_03_reboot_vm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>15.446</duration>
+          <className>test_vm_life_cycle.TestVMLifeCycle</className>
+          <testName>test_06_destroy_vm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.276</duration>
+          <className>test_vm_life_cycle.TestVMLifeCycle</className>
+          <testName>test_07_restore_vm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>235.771</duration>
+          <className>test_vm_life_cycle.TestVMLifeCycle</className>
+          <testName>test_08_migrate_vm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>125.693</duration>
+          <className>test_vm_life_cycle.TestVMLifeCycle</className>
+          <testName>test_09_expunge_vm</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>73.63</duration>
+          <className>test_vm_life_cycle.TestVMLifeCycle</className>
+          <testName>test_10_attachAndDetach_iso</testName>
+          <skipped>false</skipped>
+          <stderr>====Trying SSH Connection: Host:10.112.32.14 User:root                                   Port:22 RetryCnt:20===
+===SSH to Host 10.112.32.14 port : 22 SUCCESSFUL===
+{Cmd: mkdir -p /mnt/tmp via Host: 10.112.32.14} {returns: []}
+{Cmd: mount -rt iso9660 /dev/vdc /mnt/tmp via Host: 10.112.32.14} {returns: [u&apos;mount: special device /dev/vdc does not exist&apos;]}
+{Cmd: mount -rt iso9660 /dev/vdb /mnt/tmp via Host: 10.112.32.14} {returns: [u&apos;mount: special device /dev/vdb does not exist&apos;]}
+{Cmd: mount -rt is
+...[truncated 151 chars]...
+ via Host: 10.112.32.14} {returns: [u&apos;mount: special device /dev/hdc does not exist&apos;]}
+{Cmd: mount -rt iso9660 /dev/xvdd /mnt/tmp via Host: 10.112.32.14} {returns: []}
+{Cmd: mount |grep /dev/xvdd|head -1 via Host: 10.112.32.14} {returns: [u&apos;/dev/xvdd on /mnt/tmp type iso9660 (ro)&apos;]}
+{Cmd: du /dev/xvdd | tail -1 via Host: 10.112.32.14} {returns: [u&apos;0\t/dev/xvdd&apos;]}
+{Cmd: umount /mnt/tmp via Host: 10.112.32.14} {returns: []}
+{Cmd: mount |grep /dev/xvdd|head -1 via Host: 10.112.32.14} {returns: []}
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>350.22</duration>
+          <className>test_vm_snapshots.TestSnapshots</className>
+          <testName>test_01_test_vm_volume_snapshot</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>100.864</duration>
+          <className>test_vm_snapshots.TestVmSnapshot</className>
+          <testName>test_01_create_vm_snapshots</testName>
+          <skipped>false</skipped>
+          <stderr>====Trying SSH Connection: Host:10.112.32.5 User:root                                   Port:22 RetryCnt:20===
+===SSH to Host 10.112.32.5 port : 22 SUCCESSFUL===
+{Cmd: echo H8T9JMGEY3BKOGG5LVQ9BN20GPA8SOZC0OH6LUKU6WY4QB2EXTKZG3V68WA0PL1HRR7XRP9JQBGUV99YYOE6V4U5DMIGJ5LI2VFJ &gt; /tmp/random.data via Host: 10.112.32.5} {returns: []}
+{Cmd: cat /tmp/random.data via Host: 10.112.32.5} {returns: [u&apos;H8T9JMGEY3BKOGG5LVQ9BN20GPA8SOZC0OH6LUKU6WY4QB2EXTKZG3V68WA0PL1HRR7XRP9JQBGUV99YYOE6V4U5DMIGJ5LI2VFJ&apos;]}
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>149.368</duration>
+          <className>test_vm_snapshots.TestVmSnapshot</className>
+          <testName>test_02_revert_vm_snapshots</testName>
+          <skipped>false</skipped>
+          <stderr>====Trying SSH Connection: Host:10.112.32.5 User:root                                   Port:22 RetryCnt:20===
+SshClient: Exception under createConnection: [&apos;Traceback (most recent call last):\n&apos;, &apos;  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/marvin/sshClient.py&quot;, line 121, in createConnection\n    timeout=self.timeout)\n&apos;, &apos;  File &quot;/root/virt/xen_virt/lib/python2.7/site-packages/paramiko/client.py&quot;, line 324, in connect\n    raise NoValidConnectionsError(errors)\n&apos;, &apos;NoValidConnectio
+...[truncated 290 chars]...
+ages/paramiko/client.py&quot;, line 324, in connect
+    raise NoValidConnectionsError(errors)
+NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 10.112.32.5
+====Trying SSH Connection: Host:10.112.32.5 User:root                                   Port:22 RetryCnt:19===
+===SSH to Host 10.112.32.5 port : 22 SUCCESSFUL===
+{Cmd: cat /tmp/random.data via Host: 10.112.32.5} {returns: [u&apos;H8T9JMGEY3BKOGG5LVQ9BN20GPA8SOZC0OH6LUKU6WY4QB2EXTKZG3V68WA0PL1HRR7XRP9JQBGUV99YYOE6V4U5DMIGJ5LI2VFJ&apos;]}
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>280.472</duration>
+          <className>test_vm_snapshots.TestVmSnapshot</className>
+          <testName>test_03_delete_vm_snapshots</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>434.111</duration>
+          <className>test_volumes.TestCreateVolume</className>
+          <testName>test_01_create_volume</testName>
+          <skipped>false</skipped>
+          <stderr>====Trying SSH Connection: Host:10.112.32.8 User:root                                   Port:22 RetryCnt:20===
+===SSH to Host 10.112.32.8 port : 22 SUCCESSFUL===
+{Cmd: reboot via Host: 10.112.32.8} {returns: []}
+====Trying SSH Connection: Host:10.112.32.8 User:root                                   Port:22 RetryCnt:20===
+====Trying SSH Connection: Host:10.112.32.8 User:root                                   Port:22 RetryCnt:20===
+SshClient: Exception under createConnection: [&apos;Traceback (most rec
+...[truncated 4469 chars]...
+x00000000\n&apos;]}
+ Host: 10.112.32.8 Cmd: /sbin/fdisk -l | grep Disk Output:{&apos;status&apos;: &apos;SUCCESS&apos;, &apos;stdin&apos;: None, &apos;stderr&apos;: [], &apos;stdout&apos;: [u&apos;Disk /dev/xvda: 2147 MB, 2147483648 bytes\n&apos;, u&apos;Disk identifier: 0x000b380d\n&apos;, u&apos;Disk /dev/xvdb: 1073 MB, 1073741824 bytes\n&apos;, u&apos;Disk identifier: 0x00000000\n&apos;, u&apos;Disk /dev/mapper/VolGroup-lv_root: 1405 MB, 1405091840 bytes\n&apos;, u&apos;Disk identifier: 0x00000000\n&apos;, u&apos;Disk /dev/mapper/VolGroup-lv_swap: 213 MB, 213909504 bytes\n&apos;, u&apos;Disk identifier: 0x00000000\n&apos;]}
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>11.345</duration>
+          <className>test_volumes.TestVolumes</className>
+          <testName>test_02_attach_volume</testName>
+          <skipped>false</skipped>
+          <stderr>====Trying SSH Connection: Host:10.112.32.13 User:root                                   Port:22 RetryCnt:20===
+===SSH to Host 10.112.32.13 port : 22 SUCCESSFUL===
+{Cmd: echo -e &apos;n
+p
+1
+
+
+w&apos; | fdisk /dev/sda via Host: 10.112.32.13} {returns: [u&apos;&apos;, u&apos;Unable to open /dev/sda&apos;]}
+{Cmd: mkfs.ext3 /dev/sda1 -F via Host: 10.112.32.13} {returns: [u&apos;mke2fs 1.41.12 (17-May-2010)&apos;, u&apos;mkfs.ext3: No such file or directory while trying to determine filesystem size&apos;]}
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>15.674</duration>
+          <className>test_volumes.TestVolumes</className>
+          <testName>test_03_download_attached_volume</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>10.441</duration>
+          <className>test_volumes.TestVolumes</className>
+          <testName>test_04_delete_attached_volume</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>100.688</duration>
+          <className>test_volumes.TestVolumes</className>
+          <testName>test_05_detach_volume</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>21.491</duration>
+          <className>test_volumes.TestVolumes</className>
+          <testName>test_06_download_detached_volume</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>215.673</duration>
+          <className>test_volumes.TestVolumes</className>
+          <testName>test_07_resize_fail</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>92.31</duration>
+          <className>test_volumes.TestVolumes</className>
+          <testName>test_08_resize_volume</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>16.589</duration>
+          <className>test_volumes.TestVolumes</className>
+          <testName>test_09_delete_detached_volume</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>138.398</duration>
+          <className>test_vpc_vpn.TestVpcRemoteAccessVpn</className>
+          <testName>test_vpc_remote_access_vpn</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>301.434</duration>
+          <className>test_vpc_vpn.TestVpcSite2SiteVpn</className>
+          <testName>test_vpc_site2site_vpn</testName>
+          <skipped>false</skipped>
+          <stderr>====Trying SSH Connection: Host:10.112.32.4 User:root                                   Port:22 RetryCnt:10===
+===SSH to Host 10.112.32.4 port : 22 SUCCESSFUL===
+{Cmd: /bin/ping -c 3 -t 10 10.1.1.182 |grep packet|cut -d &apos; &apos; -f 7| cut -f1 -d&apos;%&apos; via Host: 10.112.32.4} {returns: [u&apos;0&apos;]}
+</stderr>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>13076.539</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>
