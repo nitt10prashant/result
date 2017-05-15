@@ -1,0 +1,10 @@
+test_01_nicira_controller (test_nicira_controller.TestNiciraContoller) ... SKIP: nicira settings not found in config file
+Nicira clusters will redirect clients (in this case ACS) to the master node. ... SKIP: nicira settings not found in config file
+test_03_nicira_tunnel_guest_network (test_nicira_controller.TestNiciraContoller) ... SKIP: nicira settings not found in config file
+Shared Networks Support ... SKIP: nicira settings not found in config file
+Shared Networks Support ... SKIP: nicira settings not found in config file
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.010s
+
+OK (SKIP=5)

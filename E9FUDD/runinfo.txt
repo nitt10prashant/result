@@ -1,0 +1,15 @@
+2017-04-08 07:56:24,739 - DEBUG - Parsing Test data successful
+2017-04-08 07:56:24,740 - DEBUG - Payload: {'account': 'admin', 'command': 'listUsers', 'response': 'json'}
+2017-04-08 07:56:24,740 - DEBUG - ========Sending GET Cmd : listUsers=======
+2017-04-08 07:56:24,786 - DEBUG - Response : [{username : u'admin', account : u'admin', domainid : u'91fea794-1c4c-11e7-b3a0-dac0fec47ef2', firstname : u'admin', created : u'2017-04-08T03:16:13-0400', lastname : u'cloud', apikey : u'HOrlSddg7F0Yodz2_lPHxcguKDSYt_AvEEdAbJp14H_4bTYDEobOOmXBhG1fLTZNgYVXb0HPDGrYxybA3uOyxQ', domain : u'ROOT', secretkey : u'h_WMRvyXGcrW13xgHuvTbsOYWKFX6ebZG8B5lDS5VACFyqFS-OyrUDOk4Yik3dTS9sEYLotx2NOqwuYIyjTn4w', iscallerchilddomain : False, state : u'enabled', accounttype : 1, userdetails : {isdefaultpassword : u'true'}, id : u'c6f22ce6-1c4c-11e7-b3a0-dac0fec47ef2', isdefault : True, accountid : u'c6f210a8-1c4c-11e7-b3a0-dac0fec47ef2'}]
+2017-04-08 07:56:24,786 - DEBUG - ==== Test Client Creation Successful ====
+2017-04-08 07:56:25,057 - DEBUG - ::::::::::::STARTED : TC: test_01_nicira_controller :::::::::::
+2017-04-08 07:56:25,063 - DEBUG - TestCaseName: test_01_nicira_controller; Time Taken: 0 Seconds; StartTime: Sat Apr  8 07:56:25 2017; EndTime: Sat Apr  8 07:56:25 2017; Result: SUCCESS
+2017-04-08 07:56:25,064 - DEBUG - ::::::::::::STARTED : TC: test_02_nicira_controller_redirect :::::::::::
+2017-04-08 07:56:25,064 - DEBUG - TestCaseName: test_02_nicira_controller_redirect; Time Taken: 0 Seconds; StartTime: Sat Apr  8 07:56:25 2017; EndTime: Sat Apr  8 07:56:25 2017; Result: SUCCESS
+2017-04-08 07:56:25,064 - DEBUG - ::::::::::::STARTED : TC: test_03_nicira_tunnel_guest_network :::::::::::
+2017-04-08 07:56:25,065 - DEBUG - TestCaseName: test_03_nicira_tunnel_guest_network; Time Taken: 0 Seconds; StartTime: Sat Apr  8 07:56:25 2017; EndTime: Sat Apr  8 07:56:25 2017; Result: SUCCESS
+2017-04-08 07:56:25,065 - DEBUG - ::::::::::::STARTED : TC: test_04_nicira_shared_networks_numerical_vlanid :::::::::::
+2017-04-08 07:56:25,065 - DEBUG - TestCaseName: test_04_nicira_shared_networks_numerical_vlanid; Time Taken: 0 Seconds; StartTime: Sat Apr  8 07:56:25 2017; EndTime: Sat Apr  8 07:56:25 2017; Result: SUCCESS
+2017-04-08 07:56:25,066 - DEBUG - ::::::::::::STARTED : TC: test_05_nicira_shared_networks_lrouter_uuid_vlan_id :::::::::::
+2017-04-08 07:56:25,066 - DEBUG - TestCaseName: test_05_nicira_shared_networks_lrouter_uuid_vlan_id; Time Taken: 0 Seconds; StartTime: Sat Apr  8 07:56:25 2017; EndTime: Sat Apr  8 07:56:25 2017; Result: SUCCESS
